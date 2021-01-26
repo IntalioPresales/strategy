@@ -1,0 +1,276 @@
+/*!
+ * jPushMenu.js
+ * 1.1.1
+ * @author: takien
+ * http://takien.com
+ * Original version (pure JS) is created by Mary Lou http://tympanus.net/
+ */
+
+(function($) {
+		
+	$.fn.jPushMenu = function(customOptions) {
+		var o = $.extend({}, $.fn.jPushMenu.defaultOptions, customOptions);
+		
+		/* add class to the body.*/
+		
+		$('body').addClass(o.bodyClass);
+		$(this).addClass('jPushMenuBtn');
+		$(this).click(function() {
+			var target         = '',
+			push_direction     = '';
+			
+		
+			if($(this).is('.'+o.showLeftClass)) {
+				target         = '.cbp-spmenu-left';
+				push_direction = 'toright';
+			}
+			else if($(this).is('.'+o.showRightClass)) {
+				target         = '.cbp-spmenu-right';
+				push_direction = 'toleft';
+			}
+			else if($(this).is('.'+o.showTopClass)) {
+				target         = '.cbp-spmenu-top';
+			}
+			else if($(this).is('.'+o.showBottomClass)) {
+				target         = '.cbp-spmenu-bottom';
+			}
+			
+
+			$(this).toggleClass(o.activeClass);
+			$(target).toggleClass(o.menuOpenClass);
+			
+			if($(this).is('.'+o.pushBodyClass)) {
+				$('body').toggleClass( 'cbp-spmenu-push-'+push_direction );
+			}
+			
+			/* disable all other button*/
+			$('.jPushMenuBtn').not($(this)).toggleClass('disabled');
+			
+			return false;
+		});
+		var jPushMenu = {
+			close: function (o) {
+				$('.jPushMenuBtn,body,.cbp-spmenu').removeClass('disabled active cbp-spmenu-open cbp-spmenu-push-toleft cbp-spmenu-push-toright');
+			}
+		}
+
+    if(o.closeOnClickInside) {
+       $(document).click(function() {
+          jPushMenu.close();
+        });
+
+       $('.cbp-spmenu,.toggle-menu').click(function(e){
+         e.stopPropagation();
+       });
+    }
+		
+		if(o.closeOnClickOutside) {
+			 $(document).click(function() { 
+				jPushMenu.close();
+			 }); 
+
+			 $('.cbp-spmenu,.toggle-menu').click(function(e){ 
+				 e.stopPropagation(); 
+			 });
+		 }
+
+        // On Click Link
+        if(o.closeOnClickLink) {
+            $('.cbp-spmenu a').on('click',function(){
+                jPushMenu.close();
+            });
+        }
+	};
+ 
+   /* in case you want to customize class name,
+   *  do not directly edit here, use function parameter when call jPushMenu.
+   */
+	$.fn.jPushMenu.defaultOptions = {
+		bodyClass       : 'cbp-spmenu-push',
+		activeClass     : 'menu-active',
+		showLeftClass   : 'menu-left',
+		showRightClass  : 'menu-right',
+		showTopClass    : 'menu-top',
+		showBottomClass : 'menu-bottom',
+		menuOpenClass   : 'cbp-spmenu-open',
+		pushBodyClass   : 'push-body',
+		closeOnClickOutside: true,
+		closeOnClickInside: true,
+		closeOnClickLink: true
+	};
+})(jQuery);
+/*
+ * jQuery.v2p
+ * Set css viewport units
+ */
+;(function( $ ){
+
+  function viewportToPixel( val ) {
+    var percent = val.match(/\d+/)[0] / 100,
+        unit = val.match(/[vwh]+/)[0];
+    return ( unit == 'vh'
+      ? $(window).height() * percent
+      : $(window).width() * percent ) + 'px';
+  }
+
+  function parseProps( props ) {
+    var p, prop;
+    for ( p in props ) {
+      prop = props[ p ];
+      if ( /[vwh]$/.test( prop ) ) {
+        props[ p ] = viewportToPixel( prop );
+      }
+    }
+    return props;
+  }
+
+  $.fn.v2p = function( props ) {
+    return this.css( parseProps( props ) );
+  };
+
+}( jQuery ));
+
+$(window).resize(function() {
+  $('.cbp-spmenu').v2p({
+    height:'100vh'
+  });
+});
+
+$(window).resize(); // trigger event so it shows on load
+$(document).ready(function(){
+        $('.toggle-menu').jPushMenu({closeOnClickLink: false});
+        $('.dropdown-toggle').dropdown();
+		
+		
+		
+		$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
+
+
+
+$('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			height:$(this).attr('data-percent')
+		},2000);
+		
+		$(this).find('.skill-bar-percent').css('bottom', $(this).attr('data-percent'));
+	});
+	
+	
+	
+	function toggletable(){
+		$('.first_show').toggleClass('hide');
+		$('.sec_show').toggleClass('hide');
+		setTimeout(function(){
+		
+		toggletable();
+		
+	},10000);
+	}
+	setTimeout(function(){
+		
+		toggletable();
+		
+	},10000)
+      });
+
+	  
+	  
+	  
+	  
+	  /*inner page*/
+	  $(function(){
+		  $('.popupalert').hide(0)
+		   setTimeout(function(){
+			   $('.popupalert').hide(0)
+			  $('.popupalert').removeClass('hide');
+			  
+		  },2500);
+		  
+	  $("div.holder").jPages({
+      containerID : "itemContainer",
+	  first       : false,
+    previous    : false,
+    next        : false,
+    last        : false,
+    midRange    : 15,
+    links       : "blank",
+      keyBrowse   : true,
+	  callback : function(){
+		  $('.popupalert').show(0);
+		  
+		  
+		  setTimeout(function(){
+			  $('.popupalert').hide()
+			  
+		  },2000);
+		  //alert('fewd')
+	  }
+    });
+	
+	
+	
+  $("#itemContainer").swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+  
+	
+
+	  if(direction == 'left'){
+		 // alert('left')
+		  
+		 
+	
+	  }
+    }
+  });
+
+  //Set some options later
+  $("#itemContainer").swipe( {} );
+
+
+$('.warning').click(function(){
+	
+	$('.counter_con').hide()
+	$('.table-show').animate({left: 0},500)
+})
+  
+  
+	});
+	
+	
+var randomScalingFactor = function(){ return Math.round(Math.random()*100)};
+
+	var barChartData = {
+		labels : ["January","February","March","April","May","June","July","January","February","March","April","May","June","July"],
+		datasets : [
+			{
+				fillColor : "rgba(220,220,220,0.5)",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "rgba(220,220,220,0.75)",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+			}
+		]
+
+	}
+	window.onload = function(){
+		var ctx = document.getElementById("canvas").getContext("2d");
+		window.myBar = new Chart(ctx).Bar(barChartData, {
+			responsive : true
+		});
+	}
+	
+	
+	
+	

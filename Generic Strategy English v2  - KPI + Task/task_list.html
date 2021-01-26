@@ -1,0 +1,1339 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="https://www.intalio.com/wp-content/uploads/fbrfg/favicon-32x32.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+
+    <!-- font  awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" media="all">
+
+    <!-- animatin -->
+    <link rel="stylesheet" href="css/animate.css" media="all">
+    <link rel="stylesheet" href="css/modern.css" media="all">
+    <link href="css/component.css" rel="stylesheet" type="text/css" />
+    <!-- custom style -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+    <link href="css/offcanvasmenueffects/menu_cornerbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/3d-bold-navigation/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/notification/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/uniform/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+
+    <!-- @Update -->
+    <!-- <link rel="stylesheet" href="css/ar/custom.css" media="all"> -->
+    <!-- <link rel="stylesheet" href="css/ar/rtl.css" media="all"> -->
+    <link href="css/mmenu.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+    <!-- <link href="css/themes/default.css" class="theme-color" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- COPY! -->
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/style4.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+
+    <link rel="stylesheet" type="text/css" href="custom_dashboard/styles.css">
+
+
+
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+        .frame {
+            width: 100%;
+            height: 100%;
+            min-height: 2600px;
+            border: 0;
+        }
+
+        @media (min-width: 550px) {
+            .apexcharts-align-center.position-right {
+                right: 0px !important;
+            }
+        }
+
+        @media (min-width: 1350px) {
+            .apexcharts-align-center.position-right {
+                right: 50px !important;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .apexcharts-align-center.position-right {
+                right: 120px !important;
+            }
+        }
+
+        #chart,
+        .chart-box {
+            border: none;
+        }
+
+        .title22 {
+            padding-bottom: 25px;
+        }
+
+        .static-height {
+            min-height: 615px;
+        }
+
+        .labels-chart * {
+            direction: ltr;
+            text-align: left;
+        }
+
+        .apexcharts-datalabel-label {
+            fill: #43abce;
+            font-size: 19px;
+        }
+
+        .tile-dark .labeled {
+            text-align: center;
+            font-size: 14px;
+            font-family: 'cocon';
+            max-width: 150px;
+        }
+
+        .tile-dark a {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .tile-dark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="page-header-fixed">
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+        <h3><span class="pull-left">التواصل مع فريق العمل</span><a href="javascript:void(0);" class="pull-right"
+                id="closeRight"><i class="fa fa-times"></i></a></h3>
+        <div class="slimscroll">
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>محمد
+                    خالد<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Amily
+                    Lee<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Christopher
+                    Palmer<small>Hi! How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Nick
+                    Doe<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Sandra
+                    smith<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Amily
+                    Lee<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Christopher
+                    Palmer<small>Hi! How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/avatar2.png" alt=""><span>Nick
+                    Doe<small>Hi!
+                        How're you?</small></span></a>
+        </div>
+    </nav>
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <h3><span class="pull-left">Sandra Smith</span> <a href="javascript:void(0);" class="pull-right"
+                id="closeRight2"><i class="fa fa-angle-right"></i></a></h3>
+        <div class="slimscroll chat">
+            <div class="chat-item chat-item-left">
+                <div class="chat-image">
+                    <img src="images/avatar2.png" alt="">
+                </div>
+                <div class="chat-message">
+                    Hi There!
+                </div>
+            </div>
+            <div class="chat-item chat-item-right">
+                <div class="chat-message">
+                    Hi! How are you?
+                </div>
+            </div>
+            <div class="chat-item chat-item-left">
+                <div class="chat-image">
+                    <img src="images/avatar2.png" alt="">
+                </div>
+                <div class="chat-message">
+                    Fine! do you like my project?
+                </div>
+            </div>
+            <div class="chat-item chat-item-right">
+                <div class="chat-message">
+                    Yes, It's clean and creative, good job!
+                </div>
+            </div>
+            <div class="chat-item chat-item-left">
+                <div class="chat-image">
+                    <img src="images/avatar2.png" alt="">
+                </div>
+                <div class="chat-message">
+                    Thanks, I tried!
+                </div>
+            </div>
+            <div class="chat-item chat-item-right">
+                <div class="chat-message">
+                    Good luck with your sales!
+                </div>
+            </div>
+        </div>
+        <div class="chat-write">
+            <form class="form-horizontal" action="javascript:void(0);">
+                <input type="text" class="form-control" placeholder="Say something">
+            </form>
+        </div>
+    </nav>
+
+    <!-- The page -->
+    <div class="page">
+        <div class="content">
+
+            <!-- SEARCH FORM -->
+            <form class="search-form" action="#" method="GET">
+                <div class="input-group">
+                    <input type="text" name="search" class="form-control search-input" placeholder="بحث...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i
+                                class="fa fa-times"></i></button>
+                    </span>
+                </div><!-- Input Group -->
+            </form>
+            <!-- / SEARCH FORM -->
+
+            <!-- PAGE CONTENT -->
+            <div class="page-content content-wrap">
+
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="sidebar-pusher">
+                            <a href="#menu" class="waves-effect waves-button waves-classic push-sidebar">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="logo-box">
+                            <!-- @Update -->
+                            <span id="hamburger" class="Sticky">
+                                <a href="#menu" class="mburger mburger--collapse">
+                                    <b></b>
+                                    <b></b>
+                                    <b></b>
+                                </a>
+                            </span>
+                            <a href="index.html" class="logo-text"><img src="images/logo.png" /></a>
+                        </div><!-- Logo Box -->
+                        <div class="search-button">
+                            <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i
+                                    class="fa fa-search"></i></a>
+                        </div>
+                        <div class="topmenu-outer">
+
+                            <div class="top-menu">
+                                <ul class="nav navbar-nav navbar-left">
+
+
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            class="waves-effect waves-button waves-classic toggle-fullscreen"><i
+                                                class="fa fa-expand"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                            data-toggle="dropdown">
+                                            <i class="fa fa-cogs"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
+                                            <li class="li-group">
+                                                <ul class="list-unstyled">
+                                                    <li class="no-link" role="presentation">
+                                                        الراسية ثابتة
+                                                        <div class="ios-switch pull-right switch-md">
+                                                            <input type="checkbox"
+                                                                class="js-switch pull-right fixed-header-check" checked>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="li-group">
+                                                <ul class="list-unstyled">
+
+                                                    <li class="no-link" role="presentation">
+                                                        عرض القائمة افقي
+                                                        <div class="ios-switch pull-right switch-md">
+                                                            <input type="checkbox"
+                                                                class="js-switch pull-right horizontal-bar-check">
+                                                        </div>
+                                                    </li>
+                                                    <li class="no-link" role="presentation">
+                                                        القائمة الجانبية
+                                                        <div class="ios-switch pull-right switch-md">
+                                                            <input type="checkbox"
+                                                                class="js-switch pull-right toggle-sidebar-check">
+                                                        </div>
+                                                    </li>
+                                                    <li class="no-link" role="presentation">
+                                                        تصغير القائمة
+                                                        <div class="ios-switch pull-right switch-md">
+                                                            <input type="checkbox"
+                                                                class="js-switch pull-right compact-menu-check">
+                                                        </div>
+                                                    </li>
+                                                    <li class="no-link" role="presentation">
+                                                        عرض القوائم الداخلية
+                                                        <div class="ios-switch pull-right switch-md">
+                                                            <input type="checkbox"
+                                                                class="js-switch pull-right hover-menu-check">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="li-group">
+                                                <ul class="list-unstyled">
+                                                    <li class="no-link" role="presentation">
+                                                        تصغير الشاشة
+                                                        <div class="ios-switch pull-right switch-md">
+                                                            <input type="checkbox"
+                                                                class="js-switch pull-right boxed-layout-check">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="li-group">
+                                                <ul class="list-unstyled">
+                                                    <li class="no-link" role="presentation">
+                                                        تغير اللون
+                                                        <div class="color-switcher">
+                                                            <a class="colorbox color-blue" href="?theme=default"
+                                                                title="Blue Theme" data-css="default"></a>
+                                                            <a class="colorbox color-green" href="?theme=green"
+                                                                title="Green Theme" data-css="default"></a>
+                                                            <a class="colorbox color-red" href="?theme=red" title="Red Theme"
+                                                                data-css="red"></a>
+                                                            <a class="colorbox color-white" href="?theme=white"
+                                                                title="White Theme" data-css="default"></a>
+                                                            <a class="colorbox color-purple" href="?theme=purple"
+                                                                title="purple Theme" data-css="purple"></a>
+                                                            <a class="colorbox color-dark" href="?theme=dark" title="Dark Theme"
+                                                                data-css="default"></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="no-link"><button class="btn btn-default reset-options">Reset
+                                                    Options</button></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic"
+                                            id="showRight">
+                                            <i class="fa fa-comments"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <!-- <li>
+                                        <a id="sidebar-toggle2" href="#menu"
+                                            class="waves-effect waves-button waves-classic"><i class="fa fa-bars"></i></a>
+                                    </li> -->
+                                    <li>
+                                        <a href="javascript:void(0);"
+                                            class="waves-effect waves-button waves-classic show-search"><i
+                                                class="fa fa-search"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                            data-toggle="dropdown"><i class="fa fa-star"></i><span
+                                                class="badge badge-success pull-right">4</span></a>
+                                        <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                            <li>
+                                                <p class="drop-title">You have 4 new messages !</p>
+                                            </li>
+                                            <li class="dropdown-menu-list slimscroll messages">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online on"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Sandra Smith</p>
+                                                            <p class="msg-text">Hey ! I'm working on your project</p>
+                                                            <p class="msg-time">3 minutes ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online off"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Amily Lee</p>
+                                                            <p class="msg-text">Hi David !</p>
+                                                            <p class="msg-time">8 minutes ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online off"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Christopher Palmer</p>
+                                                            <p class="msg-text">See you soon !</p>
+                                                            <p class="msg-time">56 minutes ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online on"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Nick Doe</p>
+                                                            <p class="msg-text">Nice to meet you</p>
+                                                            <p class="msg-time">2 hours ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online on"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Sandra Smith</p>
+                                                            <p class="msg-text">Hey ! I'm working on your project</p>
+                                                            <p class="msg-time">5 hours ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online off"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Amily Lee</p>
+                                                            <p class="msg-text">Hi David !</p>
+                                                            <p class="msg-time">9 hours ago</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                            data-toggle="dropdown"><i class="fa fa-tasks"></i><span
+                                                class="badge badge-success pull-right">4</span></a>
+                                        <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                            <li>
+                                                <p class="drop-title">You have 4 new messages !</p>
+                                            </li>
+                                            <li class="dropdown-menu-list slimscroll messages">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online on"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Sandra Smith</p>
+                                                            <p class="msg-text">Hey ! I'm working on your project</p>
+                                                            <p class="msg-time">3 minutes ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online off"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Amily Lee</p>
+                                                            <p class="msg-text">Hi David !</p>
+                                                            <p class="msg-time">8 minutes ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online off"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Christopher Palmer</p>
+                                                            <p class="msg-text">See you soon !</p>
+                                                            <p class="msg-time">56 minutes ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online on"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Nick Doe</p>
+                                                            <p class="msg-text">Nice to meet you</p>
+                                                            <p class="msg-time">2 hours ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online on"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Sandra Smith</p>
+                                                            <p class="msg-text">Hey ! I'm working on your project</p>
+                                                            <p class="msg-time">5 hours ago</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="msg-img">
+                                                                <div class="online off"></div><img class="img-circle"
+                                                                    src="images/avatar2.png" alt="">
+                                                            </div>
+                                                            <p class="msg-name">Amily Lee</p>
+                                                            <p class="msg-text">Hi David !</p>
+                                                            <p class="msg-time">9 hours ago</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                            data-toggle="dropdown"><i class="fa fa-bell"></i><span
+                                                class="badge badge-success pull-right">3</span></a>
+                                        <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                            <li>
+                                                <p class="drop-title">You have 3 pending tasks !</p>
+                                            </li>
+                                            <li class="dropdown-menu-list slimscroll tasks">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="task-icon badge badge-success"><i class="icon-user"></i>
+                                                            </div>
+                                                            <span class="badge badge-roundless badge-default pull-right">1min
+                                                                ago</span>
+                                                            <p class="task-details">New user registered.</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="task-icon badge badge-danger"><i
+                                                                    class="icon-energy"></i></div>
+                                                            <span class="badge badge-roundless badge-default pull-right">24min
+                                                                ago</span>
+                                                            <p class="task-details">Database error.</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <div class="task-icon badge badge-info"><i class="icon-heart"></i>
+                                                            </div>
+                                                            <span class="badge badge-roundless badge-default pull-right">1h
+                                                                ago</span>
+                                                            <p class="task-details">Reached 24k likes</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="drop-all"><a href="#" class="text-center">عرض الكل</a></li>
+                                        </ul>
+                                    </li>
+
+
+
+                                </ul><!-- Nav -->
+                            </div><!-- Top Menu -->
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar -->
+
+                <div class="page-inner">
+
+                    <div id="main-wrapper" style="margin: 0;">
+
+                        <iframe
+                            class="frame"
+                            src="iframe/task_manager_list.html"></iframe>
+
+                        <!-- End Progress -->
+                    </div><!-- Main Wrapper -->
+                    <div class="page-footer">
+                        <p class="no-s">2020 &copy; Intalio.</p>
+                    </div>
+                </div><!-- Page Inner -->
+            </div>
+            <!-- / PAGE CONTENT -->
+        </div>
+    </div>
+
+
+    <!-- @UPDATE -->
+    <nav id="menu">
+        <ul class="listview-icons">
+
+            <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-tachometer-alt"></i>Dashboard</a></li>
+            <li><a href="executiveDashboard.html"><i class="fa fa-paper-plane"></i>Executive dashboard</a></li>
+            <li>
+                <span><i class="fa fa-users"></i>Work teams</span>
+                <ul>
+                    <li class=""><a href="javascript:void(0)">Create a department</a></li>
+                    <li class=""><a href="javascript:void(0)">Create a committee</a></li>
+                    <li class=""><a href="javascript:void(0)">Show committees</a></li>
+                    <li class=""><a href="javascript:void(0)">View departments</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <span><i class="fa fa-trophy"></i>Projects</span>
+                <ul>
+                    <li class=""><a href="newProjectRequest.html">New project request</a></li>
+                    <li class=""><a href="newProject.html">Create a new project</a></li>
+                    <li class=""><a href="project_requests_list.html">View requests</a></li>
+                    <li class=""><a href="projects-list.html">View projects</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <span><i class="fa fa-people-carry"></i>Initiatives</span>
+                <ul>
+                    <li class=""><a href="newInitiative.html">Create an initiative</a></li>
+
+                    <li class=""><a href="javascript:void(0)">Show initiatives</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <span><i class="fa fa-rocket"></i>Objectives</span>
+                <ul>
+                    <li class=""><a href="newGoal.html">Create an objective</a></li>
+                    <li class=""><a href="javascript:void(0)">Show goals</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <span><i class="fa fa-university"></i>Committees</span>
+                <ul>
+                    <li class=""><a href="javascript:void(0)">Create a department</a></li>
+                    <li class=""><a href="javascript:void(0)">Create a committee</a></li>
+                    <li class=""><a href="javascript:void(0)">Show committees</a></li>
+                    <li class=""><a href="javascript:void(0)">View departments</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <span><i class="fa fa-trophy"></i>Task Management</span>
+                <ul>
+                    <li class=""><a href="task_grid.html">Tasks</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <span><i class="fa fa-stream"></i>KPI</span>
+                <ul>
+                    <li class=""><a href="new_kpi.html">Create a KPI</a></li>
+                    <li class=""><a href="javascript:void(0)">Reports</a></li>
+                </ul>
+            </li>
+
+
+
+            <li><a href="javascript:void(0)"><i class="fa fa-home"></i>My Page</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-user"></i>Profile</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-brain"></i>Brainstorming</a></li>
+            <li><a href="javascript:void(0)"><i class="fa fa-warehouse"></i>Warehouse</a></li>
+
+
+        </ul>
+    </nav>
+
+    <script>
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+            )
+    </script>
+
+    <!-- @UPDATE -->
+    <!-- scripts -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/mmenu.js"></script>
+    <!-- <script src="js/jquery-2.1.1.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.2/mmenu.js"></script> -->
+
+
+    <script src="js/jquery-blockui/jquery.blockui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/offcanvasmenueffects/snap.svg-min.js"></script>
+    <script src="js/offcanvasmenueffects/classie.js"></script>
+    <script src="js/offcanvasmenueffects/main.js"></script>
+    <script src="js/switchery/switchery.js"></script>
+    <script src="js/uniform/jquery.uniform.js"></script>
+    <script src="js/3d-bold-navigation/main.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/counter/jquery.waypoints.min.js"></script>
+    <script src="js/counter/jquery.counterup.js"></script>
+    <script src="js/notification/toastr.min.js"></script>
+    <script src="js/fullcalendar/moment.min.js"></script>
+    <script src="js/fullcalendar/fullcalendar.js"></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/pages/dashboard.js"></script>
+    <script src="js/easypiechart.js"></script>
+
+    <script src="js/classie.js"></script><!-- COPY! -->
+    <script src="js/borderMenu.js"></script>
+    <script src="js/apexcharts.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+
+    <!-- End scripts -->
+
+
+    <script>
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+            )
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // $('.pie-chart-tiny').easyPieChart({
+            //     easing: 'easeOutBounce',
+            //     barColor: '#f1c30f',
+            //     trackColor: '#e8e9eb',
+            //     scaleColor: '#d8dae1',
+            //     lineCap: 'square',
+            //     lineWidth: 10,
+            //     size: 130,
+            //     animate: 3000,
+            //     onStep: function (from, to, percent) {
+            //         $(this.el).find('.percent').text(Math.round(percent));
+            //     }
+            // });
+
+            // $('.pie-chart-tiny2').easyPieChart({
+            //     easing: 'easeOutBounce',
+            //     barColor: '#0fb391',
+            //     trackColor: '#e8e9eb',
+            //     scaleColor: '#d8dae1',
+            //     lineCap: 'square',
+            //     lineWidth: 10,
+            //     size: 130,
+            //     animate: 3000,
+            //     onStep: function (from, to, percent) {
+            //         $(this.el).find('.percent').text(Math.round(percent));
+            //     }
+            // });
+
+            // $('.pie-chart-tiny3').easyPieChart({
+            //     easing: 'easeOutBounce',
+            //     barColor: '#da3e2f',
+            //     trackColor: '#e8e9eb',
+            //     scaleColor: '#d8dae1',
+            //     lineCap: 'square',
+            //     lineWidth: 10,
+            //     size: 130,
+            //     animate: 3000,
+            //     onStep: function (from, to, percent) {
+            //         $(this.el).find('.percent').text(Math.round(percent));
+            //     }
+            // });
+
+
+            // $('.pie-chart-tiny4').easyPieChart({
+            //     easing: 'easeOutBounce',
+            //     barColor: '#f1c30f',
+            //     trackColor: '#e8e9eb',
+            //     scaleColor: '#d8dae1',
+            //     lineCap: 'square',
+            //     lineWidth: 10,
+            //     size: 130,
+            //     animate: 3000,
+            //     onStep: function (from, to, percent) {
+            //         $(this.el).find('.percent').text(Math.round(percent));
+            //     }
+            // });
+
+
+            // $('.pie-chart-tiny5').easyPieChart({
+            //     easing: 'easeOutBounce',
+            //     barColor: '#0fb391',
+            //     trackColor: '#e8e9eb',
+            //     scaleColor: '#d8dae1',
+            //     lineCap: 'square',
+            //     lineWidth: 10,
+            //     size: 130,
+            //     animate: 3000,
+            //     onStep: function (from, to, percent) {
+            //         $(this.el).find('.percent').text(Math.round(percent));
+            //     }
+            // });
+
+
+
+            var chart = window.chart = $('.pie-chart-tiny').data('easyPieChart');
+            $('.pie-chart-tiny .pie-title > i').on('click', function () {
+                $(this).closest('.pie-chart-tiny').data('easyPieChart').update(Math.random() * 200 - 100);
+            });
+
+            var stopRed = [
+                {
+                    offset: 0,
+                    color: "#EB656F",
+                    opacity: 0.5
+                },
+                {
+                    offset: 10,
+                    color: "#EB656F",
+                    opacity: 1
+                },
+                {
+                    offset: 40,
+                    color: "#EB656F",
+                    opacity: 1
+                }
+                ,
+                {
+                    offset: 99,
+                    color: "#EB656F",
+                    opacity: 1
+                }
+            ]
+            var stopGreen = [
+                {
+                    offset: 0,
+                    color: "#33ac94",
+                    opacity: 0.5
+                },
+                {
+                    offset: 10,
+                    color: "#33ac94",
+                    opacity: 1
+                },
+                {
+                    offset: 40,
+                    color: "#33ac94",
+                    opacity: 1
+                }
+                ,
+                {
+                    offset: 99,
+                    color: "#33ac94",
+                    opacity: 1
+                }
+            ]
+            var stopBlue = [
+                {
+                    offset: 0,
+                    color: "#5cace1",
+                    opacity: 0.5
+                },
+                {
+                    offset: 10,
+                    color: "#5cace1",
+                    opacity: 1
+                },
+                {
+                    offset: 40,
+                    color: "#5cace1",
+                    opacity: 1
+                }
+                ,
+                {
+                    offset: 99,
+                    color: "#5cace1",
+                    opacity: 1
+                }
+            ]
+
+            var options = {
+                series: [81],
+                chart: {
+                    height: 200,
+                    width: 200,
+                    type: 'radialBar',
+                    toolbar: {
+                        show: false
+                    }
+                },
+                plotOptions: {
+                    radialBar: {
+                        startAngle: -135,
+                        endAngle: 225,
+                        hollow: {
+                            margin: 0,
+                            size: '70%',
+                            background: '#fff',
+                            image: undefined,
+                            imageOffsetX: 0,
+                            imageOffsetY: 0,
+                            position: 'front',
+                            dropShadow: {
+                                enabled: true,
+                                top: 3,
+                                left: 0,
+                                blur: 4,
+                                opacity: 0.24
+                            }
+                        },
+                        track: {
+                            background: '#fff',
+                            strokeWidth: '67%',
+                            margin: 0, // margin is in pixels
+                            dropShadow: {
+                                enabled: true,
+                                top: -3,
+                                left: 0,
+                                blur: 4,
+                                opacity: 0.35
+                            }
+                        },
+
+                        dataLabels: {
+                            show: true,
+                            name: {
+                                offsetY: -10,
+                                show: true,
+                                color: '#888',
+                                fontSize: '17px'
+                            },
+                            value: {
+                                formatter: function (val) {
+                                    return parseInt(val);
+                                },
+                                color: '#111',
+                                fontSize: '36px',
+                                show: true,
+                            }
+                        }
+                    }
+                },
+                fill: {
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.7,
+                        opacityTo: 0.9,
+                        colorStops: [
+                            {
+                                offset: 0,
+                                color: "#33ac94",
+                                opacity: 0.5
+                            },
+                            {
+                                offset: 10,
+                                color: "#33ac94",
+                                opacity: 1
+                            },
+                            {
+                                offset: 40,
+                                color: "#33ac94",
+                                opacity: 1
+                            }
+                            ,
+                            {
+                                offset: 99,
+                                color: "#33ac94",
+                                opacity: 1
+                            }
+                        ]
+                    }
+                },
+                stroke: {
+                    lineCap: 'round'
+                },
+                labels: ['%'],
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chart1"), options);
+            chart.render();
+
+
+            var option2 = Object.assign({}, options)
+            option2.series = [89]
+            option2.fill.gradient.colorStops = stopGreen
+            var chart2 = new ApexCharts(document.querySelector("#chart2"), option2);
+            chart2.render();
+
+
+            var option3 = Object.assign({}, options)
+            option3.series = [70]
+            option3.fill.gradient.colorStops = stopBlue
+            var chart3 = new ApexCharts(document.querySelector("#chart3"), option3);
+            chart3.render();
+
+            var option4 = Object.assign({}, options)
+            option4.series = [30]
+            option4.fill.gradient.colorStops = stopRed
+            var chart4 = new ApexCharts(document.querySelector("#chart4"), option4);
+            chart4.render();
+
+            var option5 = Object.assign({}, options)
+            option5.series = [22]
+            option5.fill.gradient.colorStops = stopRed
+            var chart5 = new ApexCharts(document.querySelector("#chart5"), option5);
+            chart5.render();
+
+
+            /////////////////
+            ////////////////
+
+            var optionsChartRounded = {
+                series: [80, 73, 66, 62],
+                chart: {
+                    height: 400,
+                    type: 'radialBar',
+                },
+                plotOptions: {
+                    radialBar: {
+                        offsetY: 0,
+                        startAngle: -260,
+                        endAngle: 0,
+                        // startAngle: 0,
+                        // endAngle: 270,
+                        hollow: {
+                            margin: 5,
+                            size: '30%',
+                            background: 'transparent',
+                            image: undefined,
+                        },
+                        dataLabels: {
+                            name: {
+                                show: false,
+                            },
+                            value: {
+                                show: false,
+                            }
+                        }
+                    }
+                },
+                colors: ['#0d9e81', '#33b89d', '#11ae8e', '#559a8b'],
+                //  colors: ['#ff4552', '#ff6c31', '#ff8d17', '#ff9311'],
+                //  colors: ['#fa6318', '#fa6318', '#ff8d17', '#ff8d17'],
+
+
+                labels: [
+                    'Supervisory work',
+                    'Institutional excellence',
+                    'Cooperation',
+                    'Integration'],
+                legend: {
+                    show: true,
+                    floating: true,
+                    fontSize: '16px',
+                    position: 'right',
+                    offsetX: 0,
+                    offsetY: 30,
+                    labels: {
+                        useSeriesColors: true,
+                    },
+                    markers: {
+                        size: 0
+                    },
+                    formatter: function (seriesName, opts) {
+                        return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex]
+                    },
+                    itemMargin: {
+                        horizontal: 3,
+                    }
+                },
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        legend: {
+                            show: false
+                        }
+                    }
+                }]
+            };
+
+
+            var chartRounded = new ApexCharts(document.querySelector("#chartRounded"), optionsChartRounded);
+            chartRounded.render();
+
+
+            /////////////////
+            ////////////////
+            var options22 = {
+                series: [{
+                    data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+                }],
+                chart: {
+                    type: 'bar',
+                    height: 380
+                },
+                plotOptions: {
+                    bar: {
+                        barHeight: '100%',
+                        distributed: true,
+                        horizontal: true,
+                        dataLabels: {
+                            position: 'bottom'
+                        },
+                    }
+                },
+                colors: ['#33b2df', '#546E7A', '#d4526e', '#13d8aa', '#A5978B', '#2b908f', '#f9a3a4', '#90ee7e',
+                    '#f48024', '#69d2e7'
+                ],
+                dataLabels: {
+                    enabled: true,
+                    textAnchor: 'start',
+                    style: {
+                        colors: ['#fff']
+                    },
+                    formatter: function (val, opt) {
+                        return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+                    },
+                    offsetX: 0,
+                    dropShadow: {
+                        enabled: true
+                    }
+                },
+                stroke: {
+                    width: 1,
+                    colors: ['#fff']
+                },
+                xaxis: {
+                    categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
+                        'United States', 'China', 'India'
+                    ],
+                },
+                yaxis: {
+                    labels: {
+                        show: false
+                    }
+                },
+                title: {
+                    text: 'Custom DataLabels',
+                    align: 'center',
+                    floating: true
+                },
+                subtitle: {
+                    text: 'Category Names as DataLabels inside bars',
+                    align: 'center',
+                },
+                tooltip: {
+                    theme: 'dark',
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        title: {
+                            formatter: function () {
+                                return ''
+                            }
+                        }
+                    }
+                }
+            };
+
+            var optionsChartLabels = {
+                series: [{
+                    data: [580, 690, 1100, 1200, 1380, 1390]
+                }],
+                chart: {
+                    type: 'bar',
+                    height: 500,
+                },
+                plotOptions: {
+                    bar: {
+                        barHeight: '100%',
+                        distributed: true,
+                        horizontal: true,
+                        dataLabels: {
+                            position: 'bottom'
+                        },
+                    }
+                },
+                colors: ['#f66262', '#f66262', '#409edc', '#409edc', '#0f9e81', '#0f9e81'],
+                dataLabels: {
+                    enabled: true,
+                    textAnchor: 'start',
+                    style: {
+                        colors: ['#fff']
+                    },
+                    formatter: function (val, opt) {
+                        return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+                    },
+                    offsetX: 0,
+                    dropShadow: {
+                        enabled: true
+                    }
+                },
+                stroke: {
+                    width: 1,
+                    colors: ['#fff']
+                },
+                xaxis: {
+                    categories: [
+                        'Development of audit evidence',
+                        'Increasing the level of the bureau\'s oversight work',
+                        'Activation of the risk survey system at the Bureau',
+                        'Training and raising the efficiency of the human cadre',
+                        'Development and upgrading supervisory work',
+                        'Developing pioneering detailed auditing programs'
+                    ],
+                },
+                yaxis: {
+                    labels: {
+                        show: false
+                    }
+                },
+                title: {
+                    text: '',
+                    align: 'center',
+                    floating: true
+                },
+                tooltip: {
+                    theme: 'dark',
+                    x: {
+                        show: false
+                    },
+                    y: {
+                        title: {
+                            formatter: function () {
+                                return ''
+                            }
+                        }
+                    }
+                }
+            };
+
+            var chartLabels = new ApexCharts(document.querySelector("#chartLabels"), optionsChartLabels);
+            chartLabels.render();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsstore@3.0.0/dist/jsstore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsstore@3.0.0/dist/jsstore.worker.min.js"></script>
+
+
+    <script src="index.js"></script>
+
+
+
+
+    <!-- @UPDATE -->
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            $("#menu").mmenu({
+                counters: !0,
+                dividers: {
+                    fixed: !0
+                },
+                iconPanels: {
+                    add: !0,
+                    hideDivider: !0,
+                    hideNavbar: !0,
+                    visible: "first"
+                },
+                navbar: {
+                    title: "Menu"
+                },
+                navbars: [{
+                    position: "top",
+                    content: ["searchfield"]
+                }, {
+                    position: "top"
+                },
+                    //  {
+                    //     position: "bottom",
+                    //     content: ['<div>Hosted by <a href="https://www.byte.nl/" target="_blank">Byte</a></div>']
+                    // }
+                ],
+
+                setSelected: {
+                    hover: !0,
+                    parent: !0
+                },
+                sidebar: {
+                    collapsed: {
+                        use: 550,
+                        hideNavbar: !0,
+                        hideDivider: !0
+                    },
+                    expanded: 0
+                }
+            })
+
+        });
+
+        // document.addEventListener(
+        //     "DOMContentLoaded", () => {
+        //         new Mmenu( "#menu", {
+        //            "iconbar": {
+        //               "use": true,
+        //               "top": [
+        //                  "<a href='#/'><i class='fa fa-home'></i></a>",
+        //                  "<a href='#/'><i class='fa fa-user'></i></a>"
+        //               ],
+        //               "bottom": [
+        //                  "<a href='#/'><i class='fa fa-twitter'></i></a>",
+        //                  "<a href='#/'><i class='fa fa-facebook'></i></a>",
+        //                  "<a href='#/'><i class='fa fa-linkedin'></i></a>"
+        //               ]
+        //            },
+        //            "iconPanels": true
+        //         });
+        //     }
+        // );
+    </script>
+
+</body>
+
+</html>

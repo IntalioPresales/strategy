@@ -1,0 +1,1607 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link href="CSS/prettify.css" rel="stylesheet" />
+    <link href="CSS/bootstrap-datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" media="all">
+    <!-- owl carousel -->
+    <link href="CSS/owl.carousel.min.css" rel="stylesheet" />
+    <!-- font  awesome -->
+    <link href="CSS/animate.css" rel="stylesheet" />
+
+    <link href="CSS/jquery-ui.css" rel="stylesheet" />
+    <link href="CSS/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/font-awesome.min.css" media="all">
+    <link href="CSS/style-ar.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-tabcollapse.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+
+    <script src="js/jquery.circlechart.js"></script>
+    <script src="js/jquery.autoScrollTextTape.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body dir="rtl">
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="sk-cube-grid">
+                    <div class="sk-cube sk-cube1"></div>
+                    <div class="sk-cube sk-cube2"></div>
+                    <div class="sk-cube sk-cube3"></div>
+                    <div class="sk-cube sk-cube4"></div>
+                    <div class="sk-cube sk-cube5"></div>
+                    <div class="sk-cube sk-cube6"></div>
+                    <div class="sk-cube sk-cube7"></div>
+                    <div class="sk-cube sk-cube8"></div>
+                    <div class="sk-cube sk-cube9"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="container-fluid Logo" id="divContent4">
+        <div class="top-menu">
+            <ul class="nav navbar-nav navbar-left">
+
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic toggle-fullscreen"><i class="fa fa-expand"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
+                        <li class="li-group">
+                            <ul class="list-unstyled">
+                                <li class="no-link" role="presentation">
+                                    الراسية ثابتة
+                                    <div class="ios-switch pull-right switch-md">
+                                        <input type="checkbox" class="js-switch pull-right fixed-header-check" checked>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="li-group">
+                            <ul class="list-unstyled">
+
+                                <li class="no-link" role="presentation">
+                                    عرض القائمة افقي
+                                    <div class="ios-switch pull-right switch-md">
+                                        <input type="checkbox" class="js-switch pull-right horizontal-bar-check">
+                                    </div>
+                                </li>
+                                <li class="no-link" role="presentation">
+                                    القائمة الجانبية
+                                    <div class="ios-switch pull-right switch-md">
+                                        <input type="checkbox" class="js-switch pull-right toggle-sidebar-check">
+                                    </div>
+                                </li>
+                                <li class="no-link" role="presentation">
+                                    تصغير القائمة
+                                    <div class="ios-switch pull-right switch-md">
+                                        <input type="checkbox" class="js-switch pull-right compact-menu-check">
+                                    </div>
+                                </li>
+                                <li class="no-link" role="presentation">
+                                    عرض القوائم الداخلية
+                                    <div class="ios-switch pull-right switch-md">
+                                        <input type="checkbox" class="js-switch pull-right hover-menu-check">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-group">
+                            <ul class="list-unstyled">
+                                <li class="no-link" role="presentation">
+                                    تصغير الشاشة
+                                    <div class="ios-switch pull-right switch-md">
+                                        <input type="checkbox" class="js-switch pull-right boxed-layout-check">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-group">
+                            <ul class="list-unstyled">
+                                <li class="no-link" role="presentation">
+                                    تغير اللون
+                                    <div class="color-switcher">
+                                        <a class="colorbox color-blue" href="?theme=default" title="Blue Theme" data-css="default"></a>
+                                        <a class="colorbox color-green" href="?theme=green" title="Green Theme" data-css="default"></a>
+                                        <a class="colorbox color-red" href="?theme=red" title="Red Theme" data-css="red"></a>
+                                        <a class="colorbox color-white" href="?theme=white" title="White Theme" data-css="default"></a>
+                                        <a class="colorbox color-purple" href="?theme=purple" title="purple Theme" data-css="purple"></a>
+                                        <a class="colorbox color-dark" href="?theme=dark" title="Dark Theme" data-css="default"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="no-link"><button class="btn btn-default reset-options">Reset Options</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic" id="showRight">
+                        <i class="fa fa-comments"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic sidebar-toggle"><i class="fa fa-bars"></i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                </li>
+
+
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-star"></i><span class="badge badge-success pull-right">4</span></a>
+                    <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                        <li><p class="drop-title">You have 4 new  messages !</p></li>
+                        <li class="dropdown-menu-list slimscroll messages">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Sandra Smith</p>
+                                        <p class="msg-text">Hey ! I'm working on your project</p>
+                                        <p class="msg-time">3 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Amily Lee</p>
+                                        <p class="msg-text">Hi David !</p>
+                                        <p class="msg-time">8 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Christopher Palmer</p>
+                                        <p class="msg-text">See you soon !</p>
+                                        <p class="msg-time">56 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Nick Doe</p>
+                                        <p class="msg-text">Nice to meet you</p>
+                                        <p class="msg-time">2 hours ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Sandra Smith</p>
+                                        <p class="msg-text">Hey ! I'm working on your project</p>
+                                        <p class="msg-time">5 hours ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Amily Lee</p>
+                                        <p class="msg-text">Hi David !</p>
+                                        <p class="msg-time">9 hours ago</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-tasks"></i><span class="badge badge-success pull-right">4</span></a>
+                    <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                        <li><p class="drop-title">You have 4 new  messages !</p></li>
+                        <li class="dropdown-menu-list slimscroll messages">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Sandra Smith</p>
+                                        <p class="msg-text">Hey ! I'm working on your project</p>
+                                        <p class="msg-time">3 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Amily Lee</p>
+                                        <p class="msg-text">Hi David !</p>
+                                        <p class="msg-time">8 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Christopher Palmer</p>
+                                        <p class="msg-text">See you soon !</p>
+                                        <p class="msg-time">56 minutes ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Nick Doe</p>
+                                        <p class="msg-text">Nice to meet you</p>
+                                        <p class="msg-time">2 hours ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Sandra Smith</p>
+                                        <p class="msg-text">Hey ! I'm working on your project</p>
+                                        <p class="msg-time">5 hours ago</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="images/avatar2.png" alt=""></div>
+                                        <p class="msg-name">Amily Lee</p>
+                                        <p class="msg-text">Hi David !</p>
+                                        <p class="msg-time">9 hours ago</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success pull-right">3</span></a>
+                    <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                        <li><p class="drop-title">You have 3 pending tasks !</p></li>
+                        <li class="dropdown-menu-list slimscroll tasks">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        <div class="task-icon badge badge-success"><i class="icon-user"></i></div>
+                                        <span class="badge badge-roundless badge-default pull-right">1min ago</span>
+                                        <p class="task-details">New user registered.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="task-icon badge badge-danger"><i class="icon-energy"></i></div>
+                                        <span class="badge badge-roundless badge-default pull-right">24min ago</span>
+                                        <p class="task-details">Database error.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="task-icon badge badge-info"><i class="icon-heart"></i></div>
+                                        <span class="badge badge-roundless badge-default pull-right">1h ago</span>
+                                        <p class="task-details">Reached 24k likes</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="drop-all"><a href="#" class="text-center">عرض الكل</a></li>
+                    </ul>
+                </li>
+
+
+            </ul><!-- Nav -->
+        </div><!-- Top Menu -->
+        <center>
+            <div class="logo-box">
+                <a href="C:\Cubic Art\Projects\PMO DEMO 2017\index.html" class="logo-text"><img src="images/logo.png" /></a>
+            </div><!-- Logo Box -->
+        </center>
+
+
+
+    </header>
+
+
+    <div class="time-line">
+        <div class="line row">
+            <div class="item C-TL-values-1"><span class="percent">54%</span><span class="year">2016</span></div>
+            <div class="item C-TL-values-2"><span class="percent">35%</span><span class="year">2017</span></div>
+            <div class="item C-TL-values-3 active"><span class="percent">115%</span><span class="year">2018</span></div>
+            <div class="item C-TL-values-4 "><span class="percent"></span><span class="year">2019</span></div>
+            <div class="item C-TL-values-5"><span class="percent"></span><span class="year">2020</span></div>
+            <div class="item C-TL-values-6"><span class="percent"></span><span class="year">2021</span></div>
+            <div class="item C-TL-values-7"><span class="percent"></span><span class="year">2022</span></div>
+
+        </div>
+        <div class="text-left colors-value-cont">
+            <div class="colors-value">
+                <div class="color color-7"></div>
+                أقل من 80%
+            </div>
+
+
+            <div class="colors-value">
+                <div class="color color-8"></div>
+                من 80& الى 95%
+            </div>
+
+
+
+            <div class="colors-value">
+                <div class="color color-9"></div>
+                من 95& الى 120%
+            </div>
+
+
+
+            <div class="colors-value">
+                <div class="color color-10"></div>
+                أكثر من 120%
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="main-carousel">
+        <div class="item">
+
+            <h2 class="main-carousel-title">القطاعات</h2>
+            <div class="main-div">
+
+
+                <div class="Axes-kpi">
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="Axes-kpi-item">
+                                    <img class="Axes-kpi-img" src="images/demo/axis-1.png" />
+
+                                    <div class="kpi-group">
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="87%" data-color="1">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="45%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="32%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="111%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-value">45%</div>
+                                    </div>
+
+                                    <div class="Axes-kpi-item-title"><i class="fa fa-commenting-o" aria-hidden="true"></i>حكومة رائدة ومتميزة</div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="Axes-kpi-item">
+                                    <img class="Axes-kpi-img" src="images/demo/axis-1.png" />
+
+                                    <div class="kpi-group">
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="87%" data-color="1">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="45%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="32%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="111%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-value">45%</div>
+                                    </div>
+
+                                    <div class="Axes-kpi-item-title"><i class="fa fa-commenting-o" aria-hidden="true"></i>حكومة رائدة ومتميزة</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="Axes-kpi-item">
+                                    <img class="Axes-kpi-img" src="images/demo/axis-2.png" />
+
+                                    <div class="kpi-group">
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="87%" data-color="1">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="45%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="32%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="111%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-value">45%</div>
+                                    </div>
+
+                                    <div class="Axes-kpi-item-title"><i class="fa fa-commenting-o" aria-hidden="true"></i>حكومة رائدة ومتميزة</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="Axes-kpi-item">
+                                    <img class="Axes-kpi-img" src="images/demo/axis-3.png" />
+
+                                    <div class="kpi-group">
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="87%" data-color="1">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="45%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="32%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="111%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-value">45%</div>
+                                    </div>
+
+                                    <div class="Axes-kpi-item-title"><i class="fa fa-commenting-o" aria-hidden="true"></i>حكومة رائدة ومتميزة</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="Axes-kpi-item">
+                                    <img class="Axes-kpi-img" src="images/demo/axis-4.png" />
+
+                                    <div class="kpi-group">
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="87%" data-color="1">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="45%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="32%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+                                        <div class="chart-item-bar">
+                                            <div class="C-chart-bar" data-value="111%" data-color="2">
+                                                <div class='fill'></div>
+                                                <span class='value'></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="total-value">45%</div>
+                                    </div>
+
+                                    <div class="Axes-kpi-item-title"><i class="fa fa-commenting-o" aria-hidden="true"></i>حكومة رائدة ومتميزة</div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="main-carousel-title">المحاور</h2>
+            <div class="main-div">
+
+                <div class="goals" id="Sectors">
+
+
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="96%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="85%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+                    <div class="chart-item" data-desc="chart-desc-3">
+                        <div class="C-chart C-chart-circle" data-value="25%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="85%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="125%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="55%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="85%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+                    <div class="chart-item">
+                        <div class="C-chart C-chart-circle" data-value="55%" data-color="">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                        <div class="title">الأمن والسلامة </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="item">
+            <h2 class="main-carousel-title">الإدارات</h2>
+            <div class="main-div">
+
+                <div class="percent-image-cont">
+                    <div class="clearfix">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-006.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">مكتب المدير العام</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-001.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">تقنية المعلومات</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-002.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">الدعم المؤسسي</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-003.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">الإبداع</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-004.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">التميز المؤسسي</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-005.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">المالية</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="percent-image-item">
+
+                                <img src="images/demo/Axes-006.png" />
+                                <div class="percent-image-desc">
+                                    <div class="percent">
+                                        115%
+                                    </div>
+                                    <div class="title">شئون الموظفين</div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                    <a href="#" class="load-more btn-block ">تحميل المزيد</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <div class="main-block">
+
+        <h2><i class="fa fa-file-text" aria-hidden="true"></i>الغايات</h2>
+
+
+        <div class="goals" id="goals">
+            <div class="chart-item" data-desc="chart-desc-1">
+                <div class="C-chart C-chart-circle" data-value="98%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+
+
+
+            <div class="chart-item" data-desc="chart-desc-3">
+                
+                <div class="C-chart C-chart-circle" data-value="123%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+
+
+            <div class="chart-item" data-desc="chart-desc-3">
+                <div class="C-chart C-chart-circle" data-value="80%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+            <div class="chart-item" data-desc="chart-desc-3">
+                <div class="C-chart C-chart-circle" data-value="88%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+            <div class="chart-item" data-desc="chart-desc-1">
+                <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+
+            <div class="chart-item" data-desc="chart-desc-2">
+                <div class="C-chart C-chart-circle" data-value="87%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+
+            <div class="chart-item" data-desc="chart-desc-3">
+                <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+            <div class="chart-item" data-desc="chart-desc-3">
+                <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+            <div class="chart-item" data-desc="chart-desc-1">
+                <div class="C-chart C-chart-circle" data-value="45%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+
+            <div class="chart-item" data-desc="chart-desc-2">
+                <div class="C-chart C-chart-circle" data-value="55%" data-color="">
+                    <div class='fill'></div>
+                    <span class='value'></span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="chart-desc-cont">
+            <div class="chart-desc-item chart-desc-1">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="chart-desc-item chart-desc-2">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="chart-desc-item chart-desc-3">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+            <div class="chart-desc-item chart-desc-4">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+
+
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+            <div class="chart-desc-item chart-desc-5">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+
+
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="chart-desc-item chart-desc-6">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+
+
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="chart-desc-item chart-desc-7">
+                <div class="chart-desc-title"><i class="fa fa-commenting-o" aria-hidden="true"></i> <span>دراسة ربط رسوم تسجيل المركبات بعوامل تقيس مقدار الاستخدام</span> </div>
+
+
+
+
+                <div class="kpi-group">
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="87%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="45%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="33%" data-color="1">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-item-bar">
+                        <div class="C-chart-bar" data-value="120%" data-color="2">
+                            <div class='fill'></div>
+                            <span class='value'></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="main-block">
+
+        <h2><i class="fa fa-file-text" aria-hidden="true"></i>  مؤشرات الأداء</h2>
+        <ul class="filter-cont">
+            <li class="filter-item filter-red">  <img src="images/red-filter.png" /></li>
+            <li class="filter-item filter-yellow">  <img src="images/yellow-filter.png" /></li>
+            <li class="filter-item filter-green">  <img src="images/green-filter.png" /></li>
+            <li class="filter-item filter-blue">  <img src="images/blue-filter.png" /></li>
+            <li class="filter-item filter-all">  <img src="images/all-filter.png" /></li>
+
+
+        </ul>
+
+        <div class="year">
+            20<span>18</span>
+        </div>
+        <div class="performance-indicators-cont">
+            <div class="performance-indicators">
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="165">
+                        <span class="percent">165</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="33">
+                        <span class="percent">33</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="90">
+                        <span class="percent">90</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+            </div>
+
+            <div class="performance-indicators-arrow performance-indicators-left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="performance-indicators-arrow performance-indicators-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            <div class="performance-indicators">
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="165">
+                        <span class="percent">165</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="33">
+                        <span class="percent">33</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="90">
+                        <span class="percent">90</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="110">
+                        <span class="percent">110</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+
+                <div class="item">
+                    <div class="up-down">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="info"><i class="fa fa-commenting-o" aria-hidden="true"></i></div>
+
+                    <div class="pie-chart-tiny" data-percent="89">
+                        <span class="percent">89</span>
+
+                    </div>
+
+                    <span class="pie-title">نسبة الأشخاص الراضين عن تنوع الثقافات في الدائرة</span>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="year">
+            20<span>19</span>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/widgets.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/tables/datatables/extensions/natural_sort.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/tasks_list.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../css/selectize.default.css" media="all">
+	<script src="../js/selectize.js"></script>
+
+	<script type="text/javascript" src="assets/js/plugins/notifications/jgrowl.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/anytime.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.date.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/picker.time.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/pickadate/legacy.js"></script>
+	<script type="text/javascript" src="assets/js/pages/picker_date.js"></script>
+
+	<!-- /theme JS files -->
+	<style>
+		body {
+			background-color: #f1f4f9;
+		}
+
+		#exampleModal .input-group-addon:first-child {
+			border: 1px solid #ddd;
+		}
+	</style>
+
+	<style>
+		@media (min-width: 769px) {
+			.nav-tabs>li {
+				display: inline-block;
+				font-size: 15px;
+			}
+		}
+
+		.hash {
+			float: right;
+		}
+
+		.dropdown-menu-right li a {
+			text-align: right;
+		}
+
+		.employee_option {}
+
+		.employee_option img {
+			height: 35px;
+			border-radius: 50%;
+		}
+
+		.employee_option .box {
+			margin-right: 8px;
+		}
+
+
+		.employee_option .name {
+			font-size: 15px;
+			font-weight: 600;
+			padding-top: 4px;
+			padding-right: 3px;
+		}
+
+		.employee_option .email {
+			font-size: 12px;
+			color: #9c9b9b;
+			margin-top: -3px;
+		}
+
+		#sortable1,
+		#sortable2 {
+			/* border: 1px solid #eee; */
+			width: 100%;
+			min-height: 500px;
+			/* min-height: 20px;
+			list-style-type: none;
+			margin: 0;
+			padding: 5px 0 0 0;
+			float: left;
+			margin-right: 10px; */
+		}
+
+		.todo_container {
+			height: 800px;
+			padding-bottom: 23px;
+		}
+
+		.todo_column {
+			display: flex;
+			flex-direction: column;
+			background: #f3f3f3;
+			padding: 15px;
+			padding-bottom: 10px;
+			border: 1px solid #dedede;
+			overflow: auto;
+		}
+
+		.menu_column {
+			float: left;
+		}
+
+		.add_task {
+			float: left;
+			padding-top: 6px;
+			padding-left: 8px;
+		}
+
+		.todo_column .header {
+			padding-bottom: 10px;
+			font-weight: 700;
+			font-size: 16px;
+			color: #121212;
+			text-align: right;
+			padding-right: 6px;
+		}
+
+		.todo_column .panel-body {
+			padding: 14px;
+		}
+
+		#sortable1 li,
+		#sortable2 li {
+			/* margin: 0 5px 5px 5px;
+			padding: 5px;
+			font-size: 1.2em;
+			width: 120px; */
+		}
+
+		.ui-sortable-handle {
+			padding: 0;
+		}
+
+		.navbar-component.navbar-default {
+			border-color: #ddd;
+			background-color: #f3f3f3;
+		}
+
+		.btn_custom {
+			color: #fff;
+			background-color: #2196f3;
+			border-color: #2196f3;
+			color: #2196f3;
+			background-color: transparent;
+			background-image: none;
+			border-color: #2196f3;
+		}
+
+		.list.task-details {
+			padding: 0 9px 9px 9px;
+			list-style: none;
+		}
+
+		.dropdown-menu-right {
+			right: -143px;
+		}
+
+		.modal-header .close {
+			left: 20px;
+			right: unset;
+		}
+
+		.todo_column .panel-body .row .col-md-8 {
+			text-align: right;
+		}
+
+		.nav-tabs.nav-justified {
+			padding: 0;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<div class="card-body">
+					<ul class="nav nav-tabs nav-tabs-highlight nav-justified" style="margin: 0;">
+						<li class="nav-item active"><a href="#highlighted-justified-tab2" class="nav-link" data-toggle="tab">المهام</a></li>
+						<li class="nav-item "><a href="#highlighted-justified-tab1" class="nav-link active" data-toggle="tab">ارشيف</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<!-- TAB 1 -->
+						<div class="tab-pane fade" id="highlighted-justified-tab1">
+
+							<!-- Task manager table -->
+							<div class="panel panel-white">
+
+								<table class="table tasks-list table-lg">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>فترة</th>
+											<th>وصف المهمة</th>
+											<th>أفضلية</th>
+											<th>اخر تحديث</th>
+											<th>الحالة</th>
+											<th>المستخدمون المعينون</th>
+											<th class="text-center text-muted" style="width: 30px;"><i class="icon-checkmark3"></i></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>#25</td>
+											<td>اليوم</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">تخطيط مدونة جديد</a></div>
+												<div class="text-muted">تذمر نضج الأبدية استنشق عندما مرحبا أقل بكثير..</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الأعلى <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li class="active"><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="22 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved" selected="selected">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av1.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#24</td>
+											<td>اليوم</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">إنشاء نموذج تصميم واجهة المستخدم</a></div>
+												<div class="text-muted">مراجعة قسم التصاميم</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الأعلى <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li class="active"><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="22 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av3.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av1.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#23</td>
+											<td>اليوم</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">مجموعة أيقونات جديدة</a></div>
+												<div class="text-muted">انتشرت مجموعة من عينات النسيج </div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown">عادي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="22 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold" selected="selected">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av4.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av6.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#22</td>
+											<td>اليوم</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">إنشاء مجموعة لافتات إعلانية للحملة</a></div>
+												<div class="text-muted">أنه قطع مؤخرًا مجلة مصورة ..</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown">عادي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="22 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved" selected="selected">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av7.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av8.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#21</td>
+											<td>في الامس</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">تحرير المسودة للمشروع</a></div>
+												<div class="text-muted">بائع متجول آخر</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-info dropdown-toggle" data-toggle="dropdown">عالي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="21 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid" selected="selected">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av9.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av7.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#20</td>
+											<td>في الامس</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">إنشاء مجلس إستشاري</a></div>
+												<div class="text-muted">ملاحظات هامة ١- توجد مواد و بنود </div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الأعلى <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li class="active"><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="22 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved" selected="selected">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av8.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#19</td>
+											<td>في الامس</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">إنشاء وتنفيذ خطة تقييدية</a></div>
+												<div class="text-muted">ملاحظات هامة 3- توجد مواد و بنود </div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown">عادي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="21 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed" selected="selected">Closed</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av8.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av7.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av5.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#18</td>
+											<td>في الامس</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">وضع خطة لتسويق الشبكة </a></div>
+												<div class="text-muted">يجب الإلتزام و مراجعة تعاميم الوزارة </div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-success dropdown-toggle" data-toggle="dropdown">منخفض <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="21 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved" selected="selected">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av9.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#17</td>
+											<td>منذ يومين</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">مراجعة وتدقيق سياسة الجودة</a></div>
+												<div class="text-muted">تدقيق الهيكل التنظيمي قبل أن يعرضا على المدير العام.</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-success dropdown-toggle" data-toggle="dropdown">منخفض <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="20 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid" selected="selected">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#16</td>
+											<td>منذ يومين</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">رفع التقارير الشهرية</a></div>
+												<div class="text-muted">العمل على مناقشتها في الاجتماعات الدورية</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الأعلى <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li class="active"><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="21 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av7.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#15</td>
+											<td>منذ يومين</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">المشاركة في كتابة الأهداف الأساسية للمؤسسة</a></div>
+												<div class="text-muted">بالإضافة إلى مشاركته في صياغتها</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown">عادي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="20 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold" selected="selected">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av5.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#14</td>
+											<td>منذ يومين</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">المشاركة فى تقديم المشورة والنصائح وكتابة الخطط لمجلس الإدارة</a></div>
+												<div class="text-muted">كتابة الخطط لمجلس الإدارة</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-success dropdown-toggle" data-toggle="dropdown">منخفض <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="20 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av3.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av8.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#13</td>
+											<td>منذ يومين</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">تخطيط وجدولة وتنظيم جميع الأنشطة</a></div>
+												<div class="text-muted">والمؤتمرات، والجلسات التدريبية، والمزيد</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-info dropdown-toggle" data-toggle="dropdown">عالي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="21 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid" selected="selected">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av1.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av8.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av5.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#12</td>
+											<td>الاسبوع الماضي</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">إعداد تقارير منتظمة للإدارة العليا</a></div>
+												<div class="text-muted">التأكد من اتباع الموظفين لوائح الصحة والسلامة</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown">عادي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="17 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av6.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av3.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#11</td>
+											<td>الاسبوع الماضي</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">التأكد من اتباع الموظفين لوائح الصحة والسلامة</a></div>
+												<div class="text-muted">المهام الوظيفية</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الأعلى <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li class="active"><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="16 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix" selected="selected">Wontfix</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av2.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av7.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#"><img src="assets/images/av5.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+										<tr>
+											<td>#10</td>
+											<td>الاسبوع الماضي</td>
+											<td>
+												<div class="text-semibold"><a href="task_manager_detailed.html">الإشراف على كافة الانشطة والعمليات</a></div>
+												<div class="text-muted"> لوائح الصحة والسلامة</div>
+											</td>
+											<td>
+												<div class="btn-group">
+													<a href="#" class="label label-info dropdown-toggle" data-toggle="dropdown">عالي <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+														<li class="active"><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+														<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+													</ul>
+												</div>
+											</td>
+											<td>
+												<div class="input-group input-group-transparent">
+													<div class="input-group-addon"><i class="icon-calendar2 position-left"></i></div>
+													<input type="text" class="form-control datepicker" value="17 January, 15">
+												</div>
+											</td>
+											<td>
+												<select name="status" class="select" data-placeholder="Select status">
+													<option value="open">مفتوح</option>
+													<option value="hold">في الانتظار</option>
+													<option value="resolved">تم الحل</option>
+													<option value="resolved">مكرر</option>
+													<option value="invalid">غير صالح</option>
+													<option value="wontfix">وونتفيكس</option>
+													<option value="closed">مغلق</option>
+												</select>
+											</td>
+											<td>
+												<a href="#"><img src="assets/images/av8.jpg" class="img-circle img-xs" alt=""></a>
+												<a href="#" class="text-default">&nbsp;<i class="icon-plus22"></i></a>
+											</td>
+											<td class="text-center">
+												<ul class="icons-list">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-menu9"></i></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><i class="icon-alarm-add"></i>تحقق في</a></li>
+															<li><a href="#"><i class="icon-attachment"></i> إرفاق لقطة</a></li>
+															<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+															<li class="divider"></li>
+															<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+															<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+														</ul>
+													</li>
+												</ul>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<!-- /task manager table -->
+
+						</div>
+						<!-- TAB 1 -->
+
+						<!-- TAB 2 -->
+						<div class="tab-pane  active" id="highlighted-justified-tab2" style="background: #fff; padding: 15px;">
+
+							<!-- Tasks options -->
+							<div class="navbar navbar-default navbar-xs navbar-component">
+								<ul class="nav navbar-nav no-border visible-xs-block">
+									<li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-filter"><i class="icon-menu7"></i></a></li>
+								</ul>
+
+								<div class="navbar-collapse collapse" id="navbar-filter">
+									<p class="navbar-text">منقي:</p>
+									<ul class="nav navbar-nav">
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-sort-time-asc position-left"></i> التاريخ <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">عرض الجميع</a></li>
+												<li class="divider"></li>
+												<li><a href="#">اليوم</a></li>
+												<li><a href="#">في الامس</a></li>
+												<li><a href="#">الاسبوع الحالي</a></li>
+												<li><a href="#">الشهر الحالي</a></li>
+												<li><a href="#">السنة الحالية</a></li>
+											</ul>
+										</li>
+
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-sort-amount-desc position-left"></i> الحالة <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">عرض الجميع</a></li>
+												<li class="divider"></li>
+												<li><a href="#">مفتوح</a></li>
+												<li><a href="#">في الانتظار</a></li>
+												<li><a href="#">تم الحل</a></li>
+												<li><a href="#">مغلق</a></li>
+												<li><a href="#">مكرر</a></li>
+												<li><a href="#">غير صالحة</a></li>
+
+											</ul>
+										</li>
+
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-sort-numeric-asc position-left"></i> الافضلية <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">عرض الجميع</a></li>
+												<li class="divider"></li>
+												<li><a href="#">الاعلى</a></li>
+												<li><a href="#">عالي</a></li>
+												<li><a href="#">عادي</a></li>
+												<li><a href="#">منخفض</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="navbar-right">
+										<button type="button" id="new_task_btn" data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-primary btn-sm mt-5 btn_custom mr-10"><i class="icon-plus2 ml-5"></i>مهمة جديدة</button>
+										<button type="button" class="btn btn-outline-primary btn-sm mt-5 btn_custom"><i class="icon-plus2 ml-5"></i>عمود جديد</button>
+									</div>
+								</div>
+							</div>
+							<!-- /tasks options -->
+
+
+							<!-- Tasks grid -->
+							<div class="row todo_container">
+								<div class="col-xs-4" style="height: 100%;">
+									<!-- CUSTOM -->
+									<div class="todo_column" style="height: 100%;">
+										<div class="header">
+											منجز
+											<div class="dropdown menu_column">
+												<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#">تحرير العمود</a></li>
+													<li><a href="#"> أرشفة جميع البطاقات</a></li>
+													<li class="divider"></li>
+													<li><a href="#"> نسخ رابط العمود</a></li>
+													<li><a href="#"> حذف</a></li>
+												</ul>
+											</div>
+											<i class="icon-plus2 add_task"></i>
+										</div>
+										<div id="sortable1" class="connectedSortable">
+											<div class="col-md-12">
+												<div class="panel border-left-lg border-left-danger">
+													<div class="panel-body">
+														<div class="row">
+
+															<div class="col-md-4">
+																<ul class="list task-details">
+																	<li>28 نوفمبر, 2020</li>
+																	<li class="dropdown">
+																		أفضلية &nbsp;
+																		<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الاعلى <span class="caret"></span></a>
+																		<ul class="dropdown-menu dropdown-menu-right">
+																			<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+																			<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+																		</ul>
+																	</li>
+																	<li><a href="#">برنامج تدريب المظفين</a></li>
+																</ul>
+															</div>
+
+															<div class="col-md-8">
+																<h6 class="no-margin-top"><a href="task_manager_detailed.html">
+																		<span class="hash">&nbsp;. #21</span>
+																		إنشاء مجموعة لافتات إعلانية للحملة
+																	</a></h6>
+																<p class="mb-5"> قطع مؤخرا من مجلة مصورة
+																</p>
+																<!-- <p class="mb-5">28 نوفمبر, 2020</p> -->
+															</div>
+
+														</div>
+													</div>
+
+													<div class="panel-footer panel-footer-condensed">
+														<div class="heading-elements">
+															<span class="heading-text pull-right">منذ <span class="text-semibold">3 يوم</span></span>
+
+															<ul class="list-inline list-inline-condensed heading-text">
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown">مفتوح <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li class="active"><a href="#">مفتوح</a></li>
+																		<li><a href="#">في الانتظار</a></li>
+																		<li><a href="#">تم الحل</a></li>
+																		<li><a href="#">مغلق</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#">مكرر</a></li>
+																		<li><a href="#">غير صالحة</a></li>
+
+																	</ul>
+																</li>
+
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li><a href="#"><i class="icon-alarm-add"></i> تحقق في</a></li>
+																		<li><a href="#"><i class="icon-attachment"></i> إرفاق ملف</a></li>
+																		<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+																		<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-4" style="height: 100%;">
+									<!-- CUSTOM -->
+									<div class="todo_column" style="height: 100%;">
+										<div class="header">
+											قيد التنفيذ
+											<div class="dropdown menu_column">
+												<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#">تحرير العمود</a></li>
+													<li><a href="#"> أرشفة جميع البطاقات</a></li>
+													<li class="divider"></li>
+													<li><a href="#"> نسخ رابط العمود</a></li>
+													<li><a href="#"> حذف</a></li>
+												</ul>
+											</div>
+											<i class="icon-plus2 add_task"></i>
+										</div>
+										<div id="sortable1" class="connectedSortable">
+											<div class="col-md-12">
+												<div class="panel border-left-lg border-left-primary">
+													<div class="panel-body">
+														<div class="row">
+
+															<div class="col-md-4">
+																<ul class="list task-details">
+																	<li>10 نوفمبر, 2020</li>
+																	<li class="dropdown">
+																		أفضلية &nbsp;
+																		<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown"> عادي <span class="caret"></span></a>
+																		<ul class="dropdown-menu dropdown-menu-right">
+																			<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+																			<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+																		</ul>
+																	</li>
+																	<li><a href="#">برنامج تدريب المظفين</a></li>
+																</ul>
+															</div>
+
+															<div class="col-md-8">
+																<h6 class="no-margin-top"><a href="task_manager_detailed.html"> مراجعة تصميم
+																		<span class="hash">&nbsp;. #12</span> </a></h6>
+																<p class="mb-5">مراجع قصم التصاميم</p>
+																<!-- <p class="mb-5">28 نوفمبر, 2020</p> -->
+															</div>
+
+														</div>
+													</div>
+
+													<div class="panel-footer panel-footer-condensed">
+														<div class="heading-elements">
+															<span class="heading-text pull-right">منذ <span class="text-semibold">5 يوم</span></span>
+
+															<ul class="list-inline list-inline-condensed heading-text">
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown">مفتوح <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li class="active"><a href="#">مفتوح</a></li>
+																		<li><a href="#">في الانتظار</a></li>
+																		<li><a href="#">تم الحل</a></li>
+																		<li><a href="#">مغلق</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#">مكرر</a></li>
+																		<li><a href="#">غير صالحة</a></li>
+
+																	</ul>
+																</li>
+
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li><a href="#"><i class="icon-alarm-add"></i> تحقق في</a></li>
+																		<li><a href="#"><i class="icon-attachment"></i> إرفاق ملف</a></li>
+																		<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+																		<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-4" style="height: 100%;">
+									<!-- CUSTOM -->
+									<div class="todo_column" style="height: 100%;">
+										<div class="header">
+											جديد
+											<div class="dropdown menu_column">
+												<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+												<ul class="dropdown-menu dropdown-menu-right">
+													<li><a href="#">تحرير العمود</a></li>
+													<li><a href="#"> أرشفة جميع البطاقات</a></li>
+													<li class="divider"></li>
+													<li><a href="#"> نسخ رابط العمود</a></li>
+													<li><a href="#"> حذف</a></li>
+												</ul>
+											</div>
+											<i class="icon-plus2 add_task"></i>
+										</div>
+										<div id="sortable1" class="connectedSortable new_column">
+
+											<div class="col-md-12">
+												<div class="panel border-left-lg border-left-primary">
+													<div class="panel-body">
+														<div class="row">
+
+															<div class="col-md-4">
+																<ul class="list task-details">
+																	<li>28 نوفمبر, 2020</li>
+																	<li class="dropdown">
+																		أفضلية &nbsp;
+																		<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown"> عادي <span class="caret"></span></a>
+																		<ul class="dropdown-menu dropdown-menu-right">
+																			<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+																			<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+																		</ul>
+																	</li>
+																	<li><a href="#">برنامج تدريب المظفين</a></li>
+																</ul>
+															</div>
+
+															<div class="col-md-8">
+																<h6 class="no-margin-top"><a href="task_manager_detailed.html"> <span class="hash">&nbsp;. #24</span> إنشاء نموذج تصميم واجهة المستخدم</a></h6>
+																<p class="mb-5">مجموعة من عينات النسيج منتشرة على الطاولة</p>
+																<!-- <p class="mb-5">28 نوفمبر, 2020</p> -->
+															</div>
+
+														</div>
+													</div>
+
+													<div class="panel-footer panel-footer-condensed">
+														<div class="heading-elements">
+															<span class="heading-text pull-right">منذ <span class="text-semibold">2 يوم</span></span>
+
+															<ul class="list-inline list-inline-condensed heading-text">
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown">مفتوح <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li class="active"><a href="#">مفتوح</a></li>
+																		<li><a href="#">في الانتظار</a></li>
+																		<li><a href="#">تم الحل</a></li>
+																		<li><a href="#">مغلق</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#">مكرر</a></li>
+																		<li><a href="#">غير صالحة</a></li>
+
+																	</ul>
+																</li>
+
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li><a href="#"><i class="icon-alarm-add"></i> تحقق في</a></li>
+																		<li><a href="#"><i class="icon-attachment"></i> إرفاق ملف</a></li>
+																		<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+																		<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="panel border-left-lg border-left-success">
+													<div class="panel-body">
+														<div class="row">
+
+															<div class="col-md-4">
+																<ul class="list task-details">
+																	<li>08 نوفمبر, 2020</li>
+																	<li class="dropdown">
+																		أفضلية &nbsp;
+																		<a href="#" class="label label-success dropdown-toggle" data-toggle="dropdown">منخفض <span class="caret"></span></a>
+																		<ul class="dropdown-menu dropdown-menu-right">
+																			<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+																			<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+																			<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+																		</ul>
+																	</li>
+																	<li><a href="#">برنامج تدريب المظفين</a></li>
+																</ul>
+															</div>
+
+															<div class="col-md-8">
+																<h6 class="no-margin-top"><a href="task_manager_detailed.html">
+																		<span class="hash">&nbsp;. #12</span>
+																		أضف الأنماط المستجيبة المحدثة
+																	</a></h6>
+																<p class="mb-5">غير قادر على رسم ضربة واحدة في الوقت الحاضر</p>
+																<!-- <p class="mb-5">28 نوفمبر, 2020</p> -->
+															</div>
+
+														</div>
+													</div>
+
+													<div class="panel-footer panel-footer-condensed">
+														<div class="heading-elements">
+															<span class="heading-text pull-right">منذ <span class="text-semibold">2 ساعة</span></span>
+
+															<ul class="list-inline list-inline-condensed heading-text">
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown">مفتوح <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li class="active"><a href="#">مفتوح</a></li>
+																		<li><a href="#">في الانتظار</a></li>
+																		<li><a href="#">تم الحل</a></li>
+																		<li><a href="#">مغلق</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#">مكرر</a></li>
+																		<li><a href="#">غير صالحة</a></li>
+
+																	</ul>
+																</li>
+
+																<li class="dropdown">
+																	<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+																	<ul class="dropdown-menu dropdown-menu-right">
+																		<li><a href="#"><i class="icon-alarm-add"></i> تحقق في</a></li>
+																		<li><a href="#"><i class="icon-attachment"></i> إرفاق ملف</a></li>
+																		<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+																		<li class="divider"></li>
+																		<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+																		<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- <div class="col-xs-4">
+									<div class="todo_column">
+										<ul id="sortable2" class="connectedSortable">
+											<li class="ui-state-highlight">Item 1</li>
+											<li class="ui-state-highlight">Item 2</li>
+											<li class="ui-state-highlight">Item 3</li>
+											<li class="ui-state-highlight">Item 4</li>
+											<li class="ui-state-highlight">Item 5</li>
+										</ul>
+									</div>
+								</div> -->
+							</div>
+
+
+						</div>
+						<!-- TAB 2 -->
+
+					</div>
+				</div>
+
+
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+	<!-- Modal -->
+	<div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document" style="min-width: 800px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="exampleModalLabel">انشاء مهمة </h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="">
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<input type="text" class="form-control title_field" autocomplete="off">
+							</div>
+							<label class="col-form-label col-lg-2">العنوان</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<input type="text" class="form-control desc_field" autocomplete="off">
+							</div>
+							<label class="col-form-label col-lg-2">ملاحظات</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="icon-calendar5"></i></span>
+									<input type="text" class="form-control pickadate" placeholder="">
+								</div>
+							</div>
+							<label class="col-form-label col-lg-2">تاريخ البدء</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="icon-calendar5"></i></span>
+									<input type="text" class="form-control pickadate" placeholder="">
+								</div>
+								<!-- <input type="date" class="form-control desc_field" style="text-align: right;" autocomplete="off"> -->
+							</div>
+							<label class="col-form-label col-lg-2">تاريخ الاستحقاق</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<select class="form-control priority_field">
+									<option value="الأعلى">الأعلى</option>
+									<option value="عالي">عالي</option>
+									<option value="عادي">عادي</option>
+									<option value="منخفض">منخفض</option>
+								</select>
+							</div>
+							<label class="col-form-label col-lg-2">الافضلية</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<select class="form-control project_field">
+									<option value="برنامج تدريب المظفين">برنامج تدريب المظفين</option>
+									<option value="البنى التحتية">البنى التحتية</option>
+								</select>
+							</div>
+							<label class="col-form-label col-lg-2">المشروع</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<select class="form-control phase_field">
+									<option value="تخطيط">تخطيط</option>
+									<option value="التصميم">التصميم</option>
+									<option value="تطوير">تطوير</option>
+									<option value="اختبارات">اختبارات</option>
+								</select>
+							</div>
+							<label class="col-form-label col-lg-2">المرحلة</label>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-lg-10">
+								<select id="select-employee" class="contacts emp_field" placeholder="العاملين"></select>
+							</div>
+							<label class="col-form-label col-lg-2">العاملين</label>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" id="add_task">حفظ</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		const options__ = [
+			{ email: 'mazen@intalio.com', first_name: 'مازن', last_name: 'فرح', imgsrc: "av1.jpg", id: 1 },
+			{ email: 'sami@intalio.com', first_name: 'سامي', last_name: 'كريم', imgsrc: "av2.jpg", id: 2 },
+			{ email: 'ahmed@intalio.com', first_name: 'احمد', last_name: 'سلامة', imgsrc: "av5.jpg", id: 3 },
+		]
+
+
+		var REGEX_EMAIL = '([a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' +
+			'(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)';
+
+		var formatName = function (item) {
+			return $.trim((item.first_name || '') + ' ' + (item.last_name || ''));
+		};
+
+		$(document).ready(function () {
+
+
+
+			$('#select-employee').selectize({
+				persist: false,
+				maxItems: null,
+				valueField: 'id',
+				labelField: 'name',
+				searchField: ['first_name', 'last_name', 'email'],
+				sortField: [
+					{ field: 'first_name', direction: 'asc' },
+					{ field: 'last_name', direction: 'asc' }
+				],
+				options: options__,
+				render: {
+					item: function (item, escape) {
+						var name = formatName(item);
+						return '<div>' +
+							(name ? '<span class="name">' + escape(name) + '</span>' : '') +
+							(item.email ? '<span class="email">' + escape(item.email) + '</span>' : '') +
+							'</div>';
+					},
+					option: function (item, escape) {
+						var name = formatName(item);
+						var label = name || item.first_name;
+						var caption = name ? item.email : null;
+						return `
+							<div class="employee_option" style="display:flex;">
+								<img src="../images/${item.imgsrc}">
+								<div class="box">
+									<div class="name">${item.first_name} ${item.last_name}</div>
+									<div class="email">${item.email}</div>
+								</div>
+							</div>
+						`;
+						return '<div>' +
+							'<span class="">123' + '</span>' +
+							(caption ? '<span class="caption">' + escape(caption) + '11</span>' : '') +
+							'</div>';
+					}
+				},
+				createFilter: function (input) {
+					var regexpA = new RegExp('^' + REGEX_EMAIL + '$', 'i');
+					var regexpB = new RegExp('^([^<]*)\<' + REGEX_EMAIL + '\>$', 'i');
+					return regexpA.test(input) || regexpB.test(input);
+				},
+				create: function (input) {
+					if ((new RegExp('^' + REGEX_EMAIL + '$', 'i')).test(input)) {
+						return { email: input };
+					}
+					var match = input.match(new RegExp('^([^<]*)\<' + REGEX_EMAIL + '\>$', 'i'));
+					if (match) {
+						var name = $.trim(match[1]);
+						var pos_space = name.indexOf(' ');
+						var first_name = name.substring(0, pos_space);
+						var last_name = name.substring(pos_space + 1);
+
+						return {
+							email: match[2],
+							first_name: first_name,
+							last_name: last_name
+						};
+					}
+					alert('Invalid email address.');
+					return false;
+				}
+			});
+		})
+	</script>
+
+	<script>
+		$(function () {
+			$("#sortable1, #sortable2").sortable({
+				connectWith: ".connectedSortable"
+			}).disableSelection();
+
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+
+			$('#new_task_btn').click(function () {
+				let title = $('.title_field').val('');
+				let desc = $('.desc_field').val('');
+			})
+
+
+			$('#add_task').click(function () {
+
+				let employees = $('#select-employee').val();
+				let images = '';
+
+				if (employees && employees.length) {
+					employees.forEach(function (id) {
+						let item = options__.find(item => item.id == id);
+						images += `<a href="#" style="margin-left: 6px;"><img src="../images/${item.imgsrc}" class="img-circle img-xs" alt=""></a>`
+					})
+				}
+
+
+				let title = $('.title_field').val();
+				let desc = $('.desc_field').val();
+				let priority = $('.priority_field').val();
+				let project = $('.project_field').val();
+				let id = getRandomInt(30, 300);
+				let date = new Date();
+				var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "نوفمبر", "December"];
+				var d = new Date();
+				var monthName = months[d.getMonth()]; // "July" (or current month)
+				let el = `
+							<div class="col-md-12 ui-sortable-handle">
+								<div class="panel border-left-lg border-left-primary">
+									<div class="panel-body">
+										<div class="row">
+
+											<div class="col-md-4">
+												<ul class="list task-details">
+													<li>${date.getDate()} ${months[date.getMonth()]}, ${date.getFullYear()}</li>
+													<li class="dropdown">
+														أفضلية  &nbsp;
+														<a href="#" class="label label-primary dropdown-toggle" data-toggle="dropdown">${priority} <span class="caret"></span></a>
+														<ul class="dropdown-menu dropdown-menu-right">
+															<li><a href="#"><span class="status-mark position-left bg-danger"></span> الأعلى</a></li>
+															<li><a href="#"><span class="status-mark position-left bg-info"></span> عالي</a></li>
+															<li class="active"><a href="#"><span class="status-mark position-left bg-primary"></span> عادي</a></li>
+															<li><a href="#"><span class="status-mark position-left bg-success"></span> منخفض</a></li>
+														</ul>
+													</li>
+													<li><a href="#">${project}</a></li>
+												</ul>
+											</div>
+
+											<div class="col-md-8 main">
+												<h6 class="no-margin-top"><a href="task_manager_detailed.html">#${id}. ${title}</a></h6>
+												<p class="mb-5">${desc}</p>
+												${images || ''}
+											</div>
+											
+										</div>
+									</div>
+
+									<div class="panel-footer panel-footer-condensed">
+										<div class="heading-elements">
+											<span class="heading-text pull-right">منذ <span class="text-semibold">1 ساعة</span></span>
+
+											<ul class="list-inline list-inline-condensed heading-text">
+												<li class="dropdown">
+													<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown">مفتوح <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li class="active"><a href="#">مفتوح</a></li>
+														<li><a href="#">في الانتظار</a></li>
+														<li><a href="#">تم الحل</a></li>
+														<li><a href="#">مغلق</a></li>
+														<li class="divider"></li>
+														<li><a href="#">مكرر</a></li>
+														<li><a href="#">غير صالحة</a></li>
+														
+													</ul>
+												</li>
+
+												<li class="dropdown">
+													<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i> <span class="caret"></span></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-alarm-add"></i> تحقق في</a></li>
+														<li><a href="#"><i class="icon-attachment"></i> إرفاق ملف</a></li>
+														<li><a href="#"><i class="icon-rotate-ccw2"></i> إعادة التعيين</a></li>
+														<li class="divider"></li>
+														<li><a href="#"><i class="icon-pencil7"></i> تحرير المهمة</a></li>
+														<li><a href="#"><i class="icon-cross2"></i> حذف</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>`;
+
+				$('.new_column').append(el)
+				$("#exampleModal").modal('hide');
+			})
+		});
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1317 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all">
+
+    <!-- font  awesome -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.css" media="all"> -->
+    <!-- animatin -->
+    <link rel="stylesheet" href="css/animate.css" media="all">
+    <link rel="stylesheet" href="css/modern.css" media="all">
+    <link href="css/component.css" rel="stylesheet" type="text/css" />
+    <!-- custom style -->
+    <link href="css/offcanvasmenueffects/menu_cornerbox.css" rel="stylesheet" type="text/css" />
+    <link href="css/3d-bold-navigation/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/notification/toastr.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/uniform/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/ar/custom.css" media="all">
+    <link rel="stylesheet" href="css/ar/rtl.css" media="all">
+    <link rel="stylesheet" href="css/prettify.css" media="all">
+    <link rel="stylesheet" href="css/selectize.default.css" media="all">
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="css/themes/default.css" class="theme-color" rel="stylesheet" type="text/css">
+    <link href="css/new-request.css" class="theme-color" rel="stylesheet" type="text/css">
+    <link href="css/iziToast.css" class="theme-color" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/style4.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <script src="js/modernizr.custom.js"></script>
+
+
+</head>
+
+<body class="page-header-fixed">
+    <style>
+        .menu_info-box .col-lg-15 {
+            display: none;
+        }
+    </style>
+    <div class="overlay"></div>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s1">
+        <h3><span class="pull-left">التواصل مع فريق العمل</span><a href="javascript:void(0);" class="pull-right"
+                id="closeRight"><i class="fa fa-times"></i></a></h3>
+        <div class="slimscroll">
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>محمد
+                    خالد<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Amily
+                    Lee<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Christopher
+                    Palmer<small>Hi! How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Nick
+                    Doe<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Sandra
+                    smith<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Amily
+                    Lee<small>Hi!
+                        How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Christopher
+                    Palmer<small>Hi! How're you?</small></span></a>
+            <a href="javascript:void(0);" class="showRight2"><img src="images/qatar2022.jpg" alt=""><span>Nick
+                    Doe<small>Hi!
+                        How're you?</small></span></a>
+        </div>
+    </nav>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <h3><span class="pull-left">Sandra Smith</span> <a href="javascript:void(0);" class="pull-right"
+                id="closeRight2"><i class="fa fa-angle-right"></i></a></h3>
+        <div class="slimscroll chat">
+            <div class="chat-item chat-item-left">
+                <div class="chat-image">
+                    <img src="images/qatar2022.jpg" alt="">
+                </div>
+                <div class="chat-message">
+                    Hi There!
+                </div>
+            </div>
+            <div class="chat-item chat-item-right">
+                <div class="chat-message">
+                    Hi! How are you?
+                </div>
+            </div>
+            <div class="chat-item chat-item-left">
+                <div class="chat-image">
+                    <img src="images/qatar2022.jpg" alt="">
+                </div>
+                <div class="chat-message">
+                    Fine! do you like my project?
+                </div>
+            </div>
+            <div class="chat-item chat-item-right">
+                <div class="chat-message">
+                    Yes, It's clean and creative, good job!
+                </div>
+            </div>
+            <div class="chat-item chat-item-left">
+                <div class="chat-image">
+                    <img src="images/qatar2022.jpg" alt="">
+                </div>
+                <div class="chat-message">
+                    Thanks, I tried!
+                </div>
+            </div>
+            <div class="chat-item chat-item-right">
+                <div class="chat-message">
+                    Good luck with your sales!
+                </div>
+            </div>
+        </div>
+        <div class="chat-write">
+            <form class="form-horizontal" action="javascript:void(0);">
+                <input type="text" class="form-control" placeholder="Say something">
+            </form>
+        </div>
+    </nav>
+    <div class="menu-wrap">
+        <nav class="profile-menu">
+            <div class="profile"><img src="images/qatar2022.jpg" width="52" alt="David Green" /><span>مازن فرح</span>
+            </div>
+            <div class="profile-menu-list">
+                <a href="#"><i class="fa fa-star"></i><span>Favorites</span></a>
+                <a href="#"><i class="fa fa-bell"></i><span>Alerts</span></a>
+                <a href="#"><i class="fa fa-envelope"></i><span>Messages</span></a>
+                <a href="#"><i class="fa fa-comment"></i><span>Comments</span></a>
+            </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+    </div>
+    <form class="search-form" action="#" method="GET">
+        <div class="input-group">
+            <input type="text" name="search" class="form-control search-input" placeholder="بحث...">
+            <span class="input-group-btn">
+                <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i
+                        class="fa fa-times"></i></button>
+            </span>
+        </div><!-- Input Group -->
+    </form><!-- Search Form -->
+    <div class="page-content content-wrap">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="sidebar-pusher">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo-box">
+                    <a href="index.html" class="logo-text"><img src="images/logo.png" width="110px" /></a>
+                </div><!-- Logo Box -->
+                <div class="search-button">
+                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i
+                            class="fa fa-search"></i></a>
+                </div>
+                <div class="topmenu-outer">
+
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav navbar-left">
+
+
+                            <li>
+                                <a href="javascript:void(0);"
+                                    class="waves-effect waves-button waves-classic toggle-fullscreen"><i
+                                        class="fa fa-expand"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                    data-toggle="dropdown">
+                                    <i class="fa fa-cogs"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
+                                    <li class="li-group">
+                                        <ul class="list-unstyled">
+                                            <li class="no-link" role="presentation">
+                                                الراسية ثابتة
+                                                <div class="ios-switch pull-right switch-md">
+                                                    <input type="checkbox"
+                                                        class="js-switch pull-right fixed-header-check" checked>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-group">
+                                        <ul class="list-unstyled">
+
+                                            <li class="no-link" role="presentation">
+                                                عرض القائمة افقي
+                                                <div class="ios-switch pull-right switch-md">
+                                                    <input type="checkbox"
+                                                        class="js-switch pull-right horizontal-bar-check">
+                                                </div>
+                                            </li>
+                                            <li class="no-link" role="presentation">
+                                                القائمة الجانبية
+                                                <div class="ios-switch pull-right switch-md">
+                                                    <input type="checkbox"
+                                                        class="js-switch pull-right toggle-sidebar-check">
+                                                </div>
+                                            </li>
+                                            <li class="no-link" role="presentation">
+                                                تصغير القائمة
+                                                <div class="ios-switch pull-right switch-md">
+                                                    <input type="checkbox"
+                                                        class="js-switch pull-right compact-menu-check">
+                                                </div>
+                                            </li>
+                                            <li class="no-link" role="presentation">
+                                                عرض القوائم الداخلية
+                                                <div class="ios-switch pull-right switch-md">
+                                                    <input type="checkbox"
+                                                        class="js-switch pull-right hover-menu-check">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-group">
+                                        <ul class="list-unstyled">
+                                            <li class="no-link" role="presentation">
+                                                تصغير الشاشة
+                                                <div class="ios-switch pull-right switch-md">
+                                                    <input type="checkbox"
+                                                        class="js-switch pull-right boxed-layout-check">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-group">
+                                        <ul class="list-unstyled">
+                                            <li class="no-link" role="presentation">
+                                                تغير اللون
+                                                <div class="color-switcher">
+                                                    <a class="colorbox color-blue" href="?theme=default"
+                                                        title="Blue Theme" data-css="default"></a>
+                                                    <a class="colorbox color-green" href="?theme=green"
+                                                        title="Green Theme" data-css="default"></a>
+                                                    <a class="colorbox color-red" href="?theme=red" title="Red Theme"
+                                                        data-css="red"></a>
+                                                    <a class="colorbox color-white" href="?theme=white"
+                                                        title="White Theme" data-css="default"></a>
+                                                    <a class="colorbox color-purple" href="?theme=purple"
+                                                        title="purple Theme" data-css="purple"></a>
+                                                    <a class="colorbox color-dark" href="?theme=dark" title="Dark Theme"
+                                                        data-css="default"></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="no-link"><button class="btn btn-default reset-options">Reset
+                                            Options</button></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect waves-button waves-classic"
+                                    id="showRight">
+                                    <i class="fa fa-comments"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="sidebar-toggle2" href="javascript:void(0);"
+                                    class="waves-effect waves-button waves-classic sidebar-toggle"><i
+                                        class="fa fa-bars"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"
+                                    class="waves-effect waves-button waves-classic show-search"><i
+                                        class="fa fa-search"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                    data-toggle="dropdown"><i class="fa fa-star"></i><span
+                                        class="badge badge-success pull-right">4</span></a>
+                                <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                    <li>
+                                        <p class="drop-title">You have 4 new messages !</p>
+                                    </li>
+                                    <li class="dropdown-menu-list slimscroll messages">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online on"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Sandra Smith</p>
+                                                    <p class="msg-text">Hey ! I'm working on your project</p>
+                                                    <p class="msg-time">3 minutes ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online off"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Amily Lee</p>
+                                                    <p class="msg-text">Hi David !</p>
+                                                    <p class="msg-time">8 minutes ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online off"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Christopher Palmer</p>
+                                                    <p class="msg-text">See you soon !</p>
+                                                    <p class="msg-time">56 minutes ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online on"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Nick Doe</p>
+                                                    <p class="msg-text">Nice to meet you</p>
+                                                    <p class="msg-time">2 hours ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online on"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Sandra Smith</p>
+                                                    <p class="msg-text">Hey ! I'm working on your project</p>
+                                                    <p class="msg-time">5 hours ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online off"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Amily Lee</p>
+                                                    <p class="msg-text">Hi David !</p>
+                                                    <p class="msg-time">9 hours ago</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                    data-toggle="dropdown"><i class="fa fa-tasks"></i><span
+                                        class="badge badge-success pull-right">4</span></a>
+                                <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                    <li>
+                                        <p class="drop-title">You have 4 new messages !</p>
+                                    </li>
+                                    <li class="dropdown-menu-list slimscroll messages">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online on"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Sandra Smith</p>
+                                                    <p class="msg-text">Hey ! I'm working on your project</p>
+                                                    <p class="msg-time">3 minutes ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online off"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Amily Lee</p>
+                                                    <p class="msg-text">Hi David !</p>
+                                                    <p class="msg-time">8 minutes ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online off"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Christopher Palmer</p>
+                                                    <p class="msg-text">See you soon !</p>
+                                                    <p class="msg-time">56 minutes ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online on"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Nick Doe</p>
+                                                    <p class="msg-text">Nice to meet you</p>
+                                                    <p class="msg-time">2 hours ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online on"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Sandra Smith</p>
+                                                    <p class="msg-text">Hey ! I'm working on your project</p>
+                                                    <p class="msg-time">5 hours ago</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="msg-img">
+                                                        <div class="online off"></div><img class="img-circle"
+                                                            src="images/qatar2022.jpg" alt="">
+                                                    </div>
+                                                    <p class="msg-name">Amily Lee</p>
+                                                    <p class="msg-text">Hi David !</p>
+                                                    <p class="msg-time">9 hours ago</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
+                                    data-toggle="dropdown"><i class="fa fa-bell"></i><span
+                                        class="badge badge-success pull-right">3</span></a>
+                                <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                    <li>
+                                        <p class="drop-title">You have 3 pending tasks !</p>
+                                    </li>
+                                    <li class="dropdown-menu-list slimscroll tasks">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="task-icon badge badge-success"><i class="icon-user"></i>
+                                                    </div>
+                                                    <span class="badge badge-roundless badge-default pull-right">1min
+                                                        ago</span>
+                                                    <p class="task-details">New user registered.</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="task-icon badge badge-danger"><i
+                                                            class="icon-energy"></i></div>
+                                                    <span class="badge badge-roundless badge-default pull-right">24min
+                                                        ago</span>
+                                                    <p class="task-details">Database error.</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="task-icon badge badge-info"><i class="icon-heart"></i>
+                                                    </div>
+                                                    <span class="badge badge-roundless badge-default pull-right">1h
+                                                        ago</span>
+                                                    <p class="task-details">Reached 24k likes</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-all"><a href="#" class="text-center">عرض الكل</a></li>
+                                </ul>
+                            </li>
+
+
+
+                        </ul><!-- Nav -->
+                    </div><!-- Top Menu -->
+
+
+
+                </div>
+            </div>
+        </div><!-- Navbar -->
+        <div class="row menu_info-box">
+            <div class="col-lg-15 col-xs-15">
+                <div class="panel info-box panel-white">
+                    <a href="#cd-nav" class="waves-effect waves-button waves-classic cd-nav-trigger">
+                        <div class="panel-body">
+                            <div class="info-box-stats">
+                                <i class="fa fa-university  fa-3x"></i>
+                                <span class="info-box-title hidden-xs">ادارة وفرق عمل</span>
+                            </div>
+                            <div class="info-box-icon hidden-sm hidden-xs">
+                                <p class="counter">3</p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-15 col-xs-15">
+                <div class="panel info-box panel-white">
+                    <a href="#cd-nav2" class="waves-effect waves-button waves-classic cd-nav-trigger">
+                        <div class="panel-body">
+                            <div class="info-box-stats info-red">
+                                <i class="fa fa-diamond fa-3x"></i>
+                                <span class="info-box-title hidden-xs">الأهداف</span>
+                            </div>
+                            <div class="info-box-icon hidden-sm hidden-xs">
+                                <p class="counter">18</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-15 col-xs-15">
+                <div class="panel info-box panel-white">
+                    <a href="#cd-nav66" class="waves-effect waves-button waves-classic cd-nav-trigger">
+                        <div class="panel-body">
+                            <div class="info-box-stats info-yellow">
+                                <i class="fa fa-asterisk fa-3x"></i>
+                                <span class="info-box-title hidden-xs">المبادرات</span>
+                            </div>
+                            <div class="info-box-icon hidden-sm hidden-xs">
+                                <p class="counter">50</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-15 col-xs-15">
+                <div class="panel info-box panel-white">
+                    <a href="#cd-nav55" class="waves-effect waves-button waves-classic cd-nav-trigger">
+                        <div class="panel-body">
+                            <div class="info-box-stats info-purple">
+                                <i class="fa fa-cubes fa-3x"></i>
+                                <span class="info-box-title hidden-xs">المشاريع </span>
+                            </div>
+                            <div class="info-box-icon hidden-sm hidden-xs">
+                                <p class="counter">28</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-15 col-xs-15">
+                <div class="panel info-box panel-white">
+                    <a href="#cd-nav" class="waves-effect waves-button waves-classic cd-nav-trigger">
+                        <div class="panel-body">
+                            <div class="info-box-stats info-purple">
+                                <i class="fa fa-users fa-3x"></i>
+                                <span class="info-box-title hidden-xs">
+
+                                    فرق العمل
+                                </span>
+                            </div>
+                            <div class="info-box-icon hidden-sm hidden-xs">
+                                <p class="counter">318</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- Row -->
+
+
+        <div class="page-sidebar sidebar" style="display: none;">
+            <div class="page-sidebar-inner slimscroll">
+                <div class="sidebar-header">
+                    <div class="sidebar-profile">
+                        <a href="javascript:void(0);" id="profile-menu-link">
+                            <div class="sidebar-profile-image">
+                                <img src="images/qatar2022.jpg" class="img-circle img-responsive" alt="">
+                            </div>
+                            <div class="sidebar-profile-details">
+                                <span>لجنة الموازنة<br><small>اللجنة العليا للمشاريع والإرث</small></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul class="menu accordion-menu">
+                    <li class="active"><a href="#" class="waves-effect waves-button"><span
+                                class="menu-icon glyphicon glyphicon-home"></span>
+                            <p>صفحتي الخاصة</p>
+                        </a></li>
+
+                    <li><a href="https://www.yammer.com/" target="_blank" class="waves-effect waves-button"><span
+                                class="menu-icon fa fa-lightbulb-o fa-3x"></span>
+                            <p>العصف الذهني</p>
+                        </a>
+
+                    </li>
+                    <li class="droplink"><a href="#" class="waves-effect waves-button"><span
+                                class="menu-icon glyphicon glyphicon-briefcase"></span>
+                            <p>مركز الموارد</p><span class="arrow"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">المذكرات الداخلية</a></li>
+                            <li><a href="#">الرسائل الواردة</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Dashboard\index.html" class="waves-effect waves-button"><span
+                                class="menu-icon glyphicon glyphicon-th"></span>
+                            <p>لوحة القيادة</p>
+                        </a>
+
+                    </li>
+
+                    <li><a href="#" class="waves-effect waves-button"><span
+                                class="menu-icon glyphicon glyphicon-edit"></span>
+                            <p>التنبيهات</p>
+                        </a>
+
+                    </li>
+                </ul>
+            </div><!-- Page Sidebar Inner -->
+        </div><!-- Page Sidebar -->
+        <div class="page-inner">
+
+            <div id="main-wrapper">
+                <div class="row-box">
+                    <div class="col-md-12">
+                        <div class="row box-header">
+
+                            <div class="col-md-12">
+                                <h2>
+
+                                    طلب مشروع جديد</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="StartWizrad">
+
+
+                        <!--start Wizard-->
+
+                        <form id="commentForm" method="get" action="" class="form-horizontal">
+                            <section id="wizard">
+
+
+                                <div id="rootwizard">
+                                    <div class="navbar33">
+                                        <div class="navbar-inner">
+                                            <div class="container">
+                                                <ul>
+                                                    <li><a href="#tab1" data-toggle="tab"> معلومات المشروع </a></li>
+                                                    <li><a href="#tab2" data-toggle="tab">الجهات المعنية</a></li>
+                                                    <li><a href="#ddd" data-toggle="tab">المرفقات</a></li>
+                                                    <!-- <li><a href="#tab5" data-toggle="tab">ملخص الطلب</a></li> -->
+                                                    <li><a id="tab4click" href="#tab4" data-toggle="tab">موافقة
+                                                            المالية</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="bar" class="progress progress-striped active">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                            aria-valuemax="100" style="width: 0%;"></div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane" id="tab1">
+
+
+
+                                            <div class="">
+
+                                                <div class="col-md-4">
+
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"> اسم المشروع</label>
+                                                        <input type="text" class="form-control required name_field" id="namefield"
+                                                            placeholder="مثال : إنشاء فندق واعتماده مقراً مؤقتاً  ">
+                                                    </div>
+                                                </div>
+                                                <!--col-md--4-->
+
+                                                <div class="col-md-4">
+                                                    <div class="control-group form-group">
+                                                        <label for="exampleInputEmail1"> طلب موافقة الجهات
+                                                            المعنية</label>
+
+
+                                                        <select id="select-to3-new-request" class="contacts approvals_field"
+                                                            placeholder="مثال : وزارة الاشغال"></select>
+
+                                                    </div>
+                                                </div>
+                                                <!--col-md--4-->
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"> بواسطة </label>
+                                                        <input type="text" class="form-control" disabled
+                                                            placeholder="لجنة الموازنة">
+                                                    </div>
+                                                </div>
+                                                <!--col-md--4-->
+                                            </div>
+                                            <!--row-->
+
+
+                                            <div class="">
+
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1"> وصف المشروع </label>
+                                                        <textarea class="form-control description_field" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--row-->
+                                        </div>
+                                        <!--tab-->
+                                        <div class="tab-pane" id="tab2">
+                                            <div class="row">
+                                                <div class="col-md-12 ProjectDetails-2">
+                                                    <h3>قسم تكنولوجيا المعلومات</h3>
+                                                    <div class="row">
+                                                        <div class="control-group col-md-2"></div>
+                                                        <div class="control-group col-md-3">
+                                                            <div class="form-check form-check-inline">
+                                                                <img style="max-width: 26px;"
+                                                                    src="images/green-tick-icon.png" class="rounded"
+                                                                    alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">الموافقة</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group col-md-3">
+                                                            <img style="max-width: 26px;"
+                                                                src="images/green-tick-icon.png" class="rounded"
+                                                                alt="...">
+                                                            <label class="form-check-label"
+                                                                for="inlineCheckbox1">الموازنة</label>
+                                                        </div>
+                                                        <div class="control-group col-md-4">
+                                                            <ul class="KeywordsList-2">
+                                                                <li class="success">الموازنة تكفي</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3>الإدارة القانونية</h3>
+                                                    <div class="row">
+                                                        <div class="control-group col-md-2"></div>
+                                                        <div class="control-group col-md-3">
+                                                            <div class="form-check form-check-inline">
+                                                                <img style="max-width: 26px;"
+                                                                    src="images/green-tick-icon.png" class="rounded"
+                                                                    alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">الموافقة</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group col-md-3">
+                                                            <img style="max-width: 26px;" src="images/red-x-icon.png"
+                                                                class="rounded" alt="...">
+                                                            <label class="form-check-label"
+                                                                for="inlineCheckbox1">الموازنة</label>
+                                                        </div>
+                                                        <div class="control-group col-md-4">
+                                                            <ul class="KeywordsList-2">
+                                                                <li class="fail">بحاجة
+                                                                    إلى 15000 USD</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3>قسم المالية</h3>
+                                                    <div class="row">
+                                                        <div class="control-group col-md-2"></div>
+                                                        <div class="control-group col-md-3">
+                                                            <div class="form-check form-check-inline">
+                                                                <img style="max-width: 26px;"
+                                                                    src="images/green-tick-icon.png" class="rounded"
+                                                                    alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">الموافقة</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group col-md-3">
+                                                            <img style="max-width: 26px;" src="images/red-x-icon.png"
+                                                                class="rounded" alt="...">
+                                                            <label class="form-check-label"
+                                                                for="inlineCheckbox1">الموازنة</label>
+                                                        </div>
+                                                        <div class="control-group col-md-4">
+                                                            <ul class="KeywordsList-2">
+                                                                <li class="fail">بحاجة
+                                                                    إلى 26000 USD</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3>الادارة العليا</h3>
+                                                    <div class="row">
+                                                        <div class="control-group col-md-2"></div>
+                                                        <div class="control-group col-md-3">
+                                                            <div class="form-check form-check-inline">
+                                                                <img style="max-width: 26px;"
+                                                                    src="images/green-tick-icon.png" class="rounded"
+                                                                    alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">الموافقة</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group col-md-3">
+                                                            <img style="max-width: 26px;" src="images/red-x-icon.png"
+                                                                class="rounded" alt="...">
+                                                            <label class="form-check-label"
+                                                                for="inlineCheckbox1">الموازنة</label>
+                                                        </div>
+                                                        <div class="control-group col-md-4">
+                                                            <ul class="KeywordsList-2">
+                                                                <li class="fail">بحاجة
+                                                                    إلى 9000 USD</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--col-md-6-->
+
+                                                <div class="col-md-6">
+                                                    <div class="DespText">
+                                                        <h2>وصف المبادرة : </h2>
+                                                        تعزيز جهود رقمنه قطاع الثقافة والفنون والتراث من خلال التحول
+                                                        الالكتروني والتطبيقات الذكي
+                                                    </div>
+                                                </div>
+                                                <!--col-md-6-->
+
+                                                <div class="col-md-12">
+
+                                                    <div class="GoalsList">
+                                                        <h3>الأهداف </h3>
+                                                        <ul>
+                                                            <li>التطوير والإرتقاء بالعمل الرقابي</li>
+                                                            <li>التعاون والتواصل</li>
+
+                                                        </ul>
+                                                    </div>
+                                                    <!--GoalsList-->
+                                                </div>
+                                            </div>
+                                            <!--row-->
+                                        </div>
+                                        <div class="tab-pane" id="ddd">
+                                            <div class="row">
+                                                <div class="col-xs-12 ProjectDetails-2">
+                                                    <h3>قسم تكنولوجيا المعلومات</h3>
+                                                    <div class="row">
+                                                        <div class="margin">
+                                                            <div class="control-group col-xs-2"></div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/number-one-in-a-circle.png"
+                                                                    class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">إنشاء
+                                                                    شبكة صرف صحي</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/clock.png" class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">شهر
+                                                                    ونصف</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-4">
+                                                                <ul class="KeywordsList">
+                                                                    <li>ملف تجهيز الصحية <img src="images/iconword.png">
+                                                                    </li>
+                                                                    <li>الخريطة <img src="images/dwg-icon.png"></li>
+                                                                    <li>ملف العرض <img src="images/iconpowr.png"></li>
+                                                                    <li>ملف ريفيت <img src="images/revit.png"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <br><br>
+                                                        <hr>
+                                                        <div class="margin">
+                                                            <div class="control-group col-xs-2"></div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/number-two-in-a-circle.png"
+                                                                    class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">تجهيز
+                                                                    الطرفات</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/clock.png" class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">ثلاث
+                                                                    شهور</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-4">
+                                                                <ul class="KeywordsList">
+                                                                    <li>ملف صيانة الطريق <img src="images/iconword.png">
+                                                                    </li>
+                                                                    <li>خارطة الطريق <img src="images/dwg-icon.png">
+                                                                    </li>
+                                                                    <li>ملف ريفيت <img src="images/revit.png"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3>الإدارة القانونية</h3>
+                                                    <div class="row">
+                                                        <div class="margin">
+                                                            <div class="control-group col-xs-2"></div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/number-one-in-a-circle.png"
+                                                                    class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">إنشاء
+                                                                    مهبط لطائرات الهليكوبتر</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/clock.png" class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">شهر
+                                                                    واحد</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-4">
+                                                                <ul class="KeywordsList">
+                                                                    <li>مواصفات المهبط <img src="images/iconword.png">
+                                                                    </li>
+                                                                    <li>خريطة المهبط <img src="images/revit.png"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3>قسم المالية</h3>
+                                                    <div class="row">
+                                                        <div class="margin">
+                                                            <div class="control-group col-xs-2"></div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/number-one-in-a-circle.png"
+                                                                    class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">إنشاء
+                                                                    رخصة البناء</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/clock.png" class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">شهرين</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-4">
+                                                                <ul class="KeywordsList">
+                                                                    <li>الإستمارة <img src="images/iconword.png"></li>
+                                                                    <li>إفادة تخطيط حديثة <img src="images/iconpdf.png">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3>الادارة العليا</h3>
+                                                    <div class="row">
+                                                        <div class="margin">
+                                                            <div class="control-group col-xs-2"></div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/number-one-in-a-circle.png"
+                                                                    class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">إنشاء
+                                                                    رخصة سياحية</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-3">
+                                                                <img style="max-width: 21px; margin: 2px;"
+                                                                    src="images/clock.png" class="rounded" alt="...">
+                                                                <label class="form-check-label"
+                                                                    for="inlineCheckbox1">شهر
+                                                                    ونصف</label>
+                                                            </div>
+                                                            <div class="control-group col-xs-4">
+                                                                <ul class="KeywordsList">
+                                                                    <li>الإستمارة <img src="images/iconword.png"></li>
+                                                                    <li>شروط الرخصة <img src="images/iconword.png"></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--GoalsList-->
+
+
+
+                                        </div>
+                                        <div class="tab-pane text-center" id="tab4">
+                                            <h1 id="sendToMaliyaText">إرسال طلب الموافقة إلى المالية</h1>
+                                            <button id="sendToMaliyaButton" type="button" class="btn btn-secondary"
+                                                onclick="sendToMaliyaClicked()" style="font-size: 25px;">أرسل</button>
+                                            <h1 id="tab4loadingtext" style="display: none;">
+                                                جاري الإرسال
+                                            </h1><br>
+                                            <img id="tab4loading" src="images/checking_colored.gif"
+                                                class="rounded mx-auto d-block" alt="..." style="display: none;">
+                                            <div id="tab4row" class="row" style="display: none;">
+                                                <h1>
+                                                    الرجاء تأكيد الموافقة
+                                                </h1>
+                                                <br>
+                                                <!--HERE-->
+                                                <div class="col-xs-6">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            تم الحصول على الموافقة
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <form action="upload.php" method="post"
+                                                        enctype="multipart/form-data">
+                                                        <div class="col-xs-5">الملف المرفق لتأكيد الموافقة</div>
+                                                        <div class="col-xs-5"><input type="file" name="fileToUpload"
+                                                                id="fileToUpload"></div>
+                                                    </form>
+                                                </div>
+                                                <br><br><br>
+                                                <button id="confirmMaliyaButton" type="button" class="btn btn-secondary"
+                                                    onclick="window.location = 'newProject.html'"
+                                                    style="font-size: 25px;">تأكيد</button>
+                                            </div>
+                                        </div>
+
+                                        <ul class="pager wizard">
+                                            <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                                            <li id="nextButton" class="next"><a href="#">التالي</a></li>
+
+                                            <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                                            <li class="previous"><a href="#">السابق</a></li>
+                                            <li class="finish custom"><a href="javascript:;">إرسال الطلب</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+                            </section>
+
+
+                        </form>
+
+                        <!--End Wizard-->
+
+                    </div>
+                </div>
+            </div><!-- Main Wrapper -->
+            <div class="page-footer">
+                <p class="no-s">2020 &copy; Intalio.</p>
+            </div>
+        </div><!-- Page Inner -->
+    </div><!-- Page Content -->
+
+    <div class="slide-animate" ng-include="'menu.html'"></div>
+
+    <div class="cd-overlay"></div>
+
+    <!-- scripts -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <script src="js/jquery-blockui/jquery.blockui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/offcanvasmenueffects/snap.svg-min.js"></script>
+    <script src="js/offcanvasmenueffects/classie.js"></script>
+    <script src="js/offcanvasmenueffects/main.js"></script>
+    <script src="js/switchery/switchery.js"></script>
+    <script src="js/uniform/jquery.uniform.js"></script>
+    <script src="js/3d-bold-navigation/main.js"></script>
+    <script src="js/jquery.slimscroll.js"></script>
+    <script src="js/counter/jquery.waypoints.min.js"></script>
+    <script src="js/counter/jquery.counterup.js"></script>
+    <script src="js/notification/toastr.min.js"></script>
+    <script src="js/fullcalendar/moment.min.js"></script>
+    <script src="js/fullcalendar/fullcalendar.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="js/pages/dashboard.js"></script>
+
+    <script src="js/selectize.js"></script>
+    <script src="js/autoc.js"></script>
+    <script src="js/iziToast.js"></script>
+
+    <script src="js/classie.js"></script>
+    <script src="js/borderMenu.js" async></script>
+    <!-- End scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+    <script>
+        let app = angular.module('app', []);
+
+        app.controller('mainController', function ($scope) {
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var $validator = $("#commentForm").validate({
+                rules: {
+                    emailfield: {
+                        required: true,
+                        email: true,
+                        minlength: 3
+                    },
+                    namefield: {
+                        required: true,
+                        minlength: 3
+                    },
+                    urlfield: {
+                        required: true,
+                        minlength: 3,
+                        url: true
+                    }
+                }
+            });
+
+
+            $('#rootwizard').bootstrapWizard({
+                onNext: function (tab, navigation, index) {
+                    if (index == 3) {
+                        // toastr.options = {
+                        //     closeButton: true,
+                        //     progressBar: true,
+                        //     showMethod: 'fadeIn',
+                        //     hideMethod: 'fadeOut',
+                        //     timeOut: 5000
+                        // };
+                        // toastr.success('YOOOO');
+                        // $("#tab4row").hide();
+                        // $("#tab4loading").show();
+                        // $("#tab4loadingtext").show();
+                        // setTimeout(function () {
+                        //     $("#tab4row").show();
+                        //     $("#tab4loading").hide();
+                        //     $("#tab4loadingtext").hide();
+                        // }, 3000);
+                    } else {
+                        // $("#tab4row").hide();
+                        // $("#tab4loading").show();
+                        // $("#tab4loadingtext").show();
+                    }
+                    // Set the name for the next tab
+                    $('#tab3').html('Hello, ' + $('#name').val());
+
+                }, onTabShow: function (tab, navigation, index) {
+                    var $total = navigation.find('li').length;
+                    var $current = index + 1;
+                    var $percent = ($current / $total) * 100;
+                    $('#rootwizard .progress-bar').css({ width: $percent + '%' });
+                }, onPrevious: function (tab, navigation, index) {
+                    if (index == 3) {
+                        // $("#tab4row").hide();
+                        // $("#tab4loading").show();
+                        // $("#tab4loadingtext").show();
+                        // setTimeout(function () {
+                        //     $("#tab4row").show();
+                        //     $("#tab4loading").hide();
+                        //     $("#tab4loadingtext").hide();
+                        // }, 3000);
+                    } else {
+                        // $("#tab4row").hide();
+                        // $("#tab4loading").show();
+                        // $("#tab4loadingtext").show();
+                    }
+                }
+            });
+            window.prettyPrint && prettyPrint()
+        });
+
+    </script>
+
+
+
+    <script>
+
+        $('li.finish a:not(.stop)').click(function () {
+
+            save();
+
+            $('.pager.wizard').hide();
+
+            iziToast.show({
+                id: null,
+                class: '',
+                title: 'تم اضافة الطلب.',
+                titleColor: '',
+                titleSize: '20',
+                titleLineHeight: '',
+                message: '',
+                messageColor: '',
+                messageSize: '',
+                messageLineHeight: '',
+                backgroundColor: '',
+                theme: 'light', // dark
+                color: 'green', // blue, red, green, yellow
+                icon: 'fa fa-check',
+                iconText: '',
+                iconColor: '',
+                iconUrl: null,
+                image: '',
+                imageWidth: 50,
+                maxWidth: null,
+                zindex: null,
+                layout: 1,
+                balloon: false,
+                close: true,
+                closeOnEscape: false,
+                closeOnClick: false,
+                displayMode: 0, // once, replace
+                position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+                target: '',
+                targetFirst: true,
+                timeout: 4500,
+                rtl: true,
+                animateInside: true,
+                drag: true,
+                pauseOnHover: true,
+                resetOnHover: false,
+                progressBar: true,
+                progressBarColor: '',
+                progressBarEasing: 'linear',
+                overlay: false,
+                overlayClose: false,
+                overlayColor: 'rgba(0, 0, 0, 0.6)',
+                transitionIn: 'fadeInUp',
+                transitionOut: 'fadeOut',
+                transitionInMobile: 'fadeInUp',
+                transitionOutMobile: 'fadeOutDown',
+                buttons: {},
+                inputs: {},
+                onOpening: function () { },
+                onOpened: function () { },
+                onClosing: function () { },
+                onClosed: function () { }
+            });
+            setTimeout(function () {
+                // location.reload();
+                window.location.href = "index.html";
+            }, 5500);
+        });
+
+        function uuid4() {
+            return Date.now().toString(36) + Math.random().toString(36).substring(2);
+        }
+
+        function save() {
+
+            let name_field = $('.name_field').val();
+            let approvals_field = $('.approvals_field').val();
+            let by_field = $('.by_field').val();
+            let description_field = $('.description_field').val();
+
+            let object = {
+                id: uuid4(),
+                name_field: name_field,
+                approvals_field: approvals_field,
+                by_field: by_field,
+                description_field: description_field,
+            }
+
+            let projectsRequests = JSON.parse(localStorage.getItem('projectsRequests'))
+
+            if (!projectsRequests || !projectsRequests.length) {
+                projectsRequests = [];
+            }
+
+            projectsRequests.push(object);
+
+            localStorage.setItem('projectsRequests', JSON.stringify(projectsRequests))
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Meta -->
+	<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+	<meta name="author" content="ParkerThemes">
+	<link rel="shortcut icon" href="img/fav.png" />
+
+	<!-- Title -->
+	<title>Wafi Admin Template - Project Management Dashboard</title>
+
+
+	<!-- *************
+			************ Common Css Files *************
+		************ -->
+	<!-- Bootstrap css -->
+	<link rel="stylesheet" href="topbar-rtl/css/bootstrap.min.css">
+
+	<!-- Icomoon Font Icons css -->
+	<link rel="stylesheet" href="topbar-rtl/fonts/style.css">
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="topbar-rtl/css/main.css">
+
+
+	<!-- *************
+			************ Vendor Css Files *************
+		************ -->
+	<!-- DateRange css -->
+	<link rel="stylesheet" href="topbar-rtl/vendor/daterange/daterange.css" />
+
+	<!-- Circliful css -->
+	<link rel="stylesheet" href="topbar-rtl/vendor/circliful/circliful.css" />
+
+	<style>
+		.see_all {
+			float: right;
+			font-weight: 400;
+			color: #2180a0;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		.logs-container .logs-body .log-list .log-info .log-title {
+			line-height: 30px;
+		}
+
+		.logs-container .logs-body .log-list .log-info {
+			padding: 0 0 0px 0;
+		}
+
+		div,
+		span,
+		p {
+			font-size: 14px !important;
+		}
+
+		text.icon {
+			font-size: 33px !important;
+		}
+
+		.TeamList li {
+			display: inline-block;
+			margin: 15px;
+		}
+
+		.TeamList li .sidebar-profile span {
+			color: #000 !important;
+		}
+
+		.sidebar-profile span {
+			color: #fff;
+			font-weight: 600;
+			display: block;
+			padding: 8px 0 0;
+			text-align: center;
+		}
+
+		.sidebar-profile span small {
+			color: #899dc1;
+		}
+
+		.sidebar-profile span small {
+			padding: 5px 0;
+		}
+
+		.sidebar-profile img {
+			width: 50px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		.img-circle {
+			border-radius: 50%;
+		}
+
+		.overview-box {
+			height: 279px;
+			justify-content: start;
+		}
+
+		.TeamList li .sidebar-profile span {
+			font-size: 13px !important;
+		}
+
+		.sidebar-profile span small {
+			padding: 5px 0;
+			font-size: 12px !important;
+			font-weight: 600;
+		}
+
+		.card .card-header .card-title {
+			font-weight: 900;
+			font-size: 15px !important;
+		}
+
+		.bg-green {
+			background: #33ac94 !important;
+		}
+
+		.bg-blue {
+			background: #5cace1 !important;
+		}
+
+		.bg-red {
+			background: #f77979 !important;
+		}
+
+		.text-green {
+			color: #33ac94 !important;
+		}
+
+		.text-blue {
+			color: #5cace1 !important;
+		}
+
+		.text-red {
+			color: #f77979 !important;
+		}
+
+		.launch-box {
+			background: #de4141;
+		}
+
+		body {
+			background: #f5f6fa;
+		}
+
+		.card .card-header {
+			text-align: left;
+		}
+
+		.gutters {
+			text-align: left;
+		}
+
+		.list-group {
+			direction: ltr;
+			margin: 0;
+		}
+
+		.kpi_more,
+		.staff_kpi_more {
+			position: absolute;
+			right: 19px;
+			top: 7px;
+			color: #2180a0;
+			font-size: 13px !important;
+			cursor: pointer;
+			z-index: 22;
+			text-decoration: underline;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Loading starts -->
+	<!-- <div id="loading-wrapper">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div> -->
+	<!-- Loading ends -->
+
+
+	<!-- *************
+			************ Header section start *************
+		************* -->
+
+
+	<!-- Screen overlay start -->
+	<div class="screen-overlay"></div>
+	<!-- Screen overlay end -->
+
+	<!-- Quicklinks box start -->
+	<div class="quick-links-box">
+		<div class="quick-links-header">
+			Quick Links
+			<a href="#" class="quick-links-box-close">
+				<i class="icon-circle-with-cross"></i>
+			</a>
+		</div>
+
+		<div class="quick-links-wrapper">
+			<div class="fullHeight">
+				<div class="quick-links-body">
+					<div class="container-fluid p-0">
+						<div class="row less-gutters">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<a href="documents.html" class="quick-tile blue">
+									<i class="icon-file-text"></i>
+									Documents
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="crm-dashboard.html" class="quick-tile secondary">
+									<i class="icon-pie-chart1"></i>
+									CRM
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="ecommerce-dashboard.html" class="quick-tile blue">
+									<i class="icon-shopping-cart1"></i>
+									Ecommerce
+								</a>
+							</div>
+						</div>
+						<div class="row less-gutters">
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<a href="gallery2.html" class="quick-tile photos lg">
+									Photos
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="tasks.html" class="quick-tile">
+									<i class="icon-check-circle"></i>
+									Tasks
+								</a>
+								<a href="calendar-external-draggable.html" class="quick-tile blue">
+									<i class="icon-calendar1"></i>
+									Events
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="chat.html" class="quick-tile blue">
+									<i class="icon-message-circle"></i>
+									Chat
+								</a>
+								<a href="default-layout.html" class="quick-tile">
+									<i class="icon-grid"></i>
+									Layout
+								</a>
+							</div>
+						</div>
+						<div class="row less-gutters">
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="custom-alerts.html" class="quick-tile secondary">
+									<i class="icon-alert-triangle"></i>
+									Alerts
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="google-maps.html" class="quick-tile blue">
+									<i class="icon-map-pin"></i>
+									Maps
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="https://www.gmail.com" target="_blank" class="quick-tile white">
+									<i class="icon-drafts"></i>
+									Gmail
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="https://www.youtube.com" target="_blank" class="quick-tile secondary">
+									<i class="icon-youtube"></i>
+									Youtube
+								</a>
+							</div>
+						</div>
+						<div class="row less-gutters">
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="user-profile.html" class="quick-tile">
+									<i class="icon-account_circle"></i>
+									Profile
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="contacts.html" class="quick-tile">
+									<i class="icon-phone"></i>
+									Contacts
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="account-settings.html" class="quick-tile">
+									<i class="icon-settings1"></i>
+									Settings
+								</a>
+							</div>
+							<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+								<a href="login.html" class="quick-tile">
+									<i class="icon-lock2"></i>
+									Logout
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Quicklinks box end -->
+
+	<!-- Quick settings start -->
+	<div class="quick-settings-box">
+		<div class="quick-settings-header">
+			<div class="date-container">Today <span class="date" id="today-date"></span></div>
+			<a href="#" class="quick-settings-box-close">
+				<i class="icon-circle-with-cross"></i>
+			</a>
+		</div>
+		<div class="quick-settings-body">
+			<div class="fullHeight">
+				<div class="quick-setting-list">
+					<h6 class="title">Events</h6>
+					<ul class="list-items">
+						<li>
+							<div class="list-title">Product Launch</div>
+							<div class="list-location">10:00 AM</div>
+						</li>
+						<li>
+							<div class="list-title">Team Meeting</div>
+							<div class="list-location">01:30 PM</div>
+						</li>
+						<li>
+							<div class="list-title">Q&A Session</div>
+							<div class="list-location">02:30 PM</div>
+						</li>
+					</ul>
+				</div>
+				<div class="quick-setting-list">
+					<h6 class="title">Notes</h6>
+					<ul class="list-items">
+						<li>
+							<div class="list-title">Refreshing the list</div>
+							<div class="list-location">03:15 PM</div>
+						</li>
+						<li>
+							<div class="list-title">Not able to click on button</div>
+							<div class="list-location">03:18 PM</div>
+						</li>
+					</ul>
+				</div>
+				<div class="quick-setting-list">
+					<h6 class="title">Quick Settings</h6>
+					<ul class="set-priority-list">
+						<li>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" checked id="systemUpdates">
+								<label class="custom-control-label" for="systemUpdates">System Updates</label>
+							</div>
+						</li>
+						<li>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="noti">
+								<label class="custom-control-label" for="noti">Notifications</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Quick settings end -->
+
+	<!-- *************
+			************ Header section end *************
+		************* -->
+
+	<!-- Container fluid start -->
+	<div class="container-fluid">
+
+
+
+		<!-- *************
+				************ Main container start *************
+			************* -->
+		<div class="main-container">
+
+			<!-- Content wrapper start -->
+			<div class="content-wrapper">
+
+				<!-- PROJECT NAME -->
+				<div class="row" style="margin-top: 60px;">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="card" style="padding: 10px 15px;">
+							<h3 class="m-0" style="text-align: left!important;">Athletic track</h3>
+						</div>
+					</div>
+				</div>
+				<!-- / PROJECT NAME -->
+
+				<!-- Row starts -->
+				<div class="row gutters justify-content-center">
+					<div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="card h-180">
+							<!-- Row starts -->
+							<div class="row gutters">
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+									<div class="project-progress progress-arrow">
+										<h6>Planning</h6>
+										<div id="projectPlanning"></div>
+										<p class="completed">Completed</p>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+									<div class="project-progress progress-arrow">
+										<h6>Design</h6>
+										<div id="projectDesign"></div>
+										<p class="completed">Completed</p>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+									<div class="project-progress progress-arrow">
+										<h6>Development</h6>
+										<div id="projectDevelopment"></div>
+										<p class="inprogress">In-progress</p>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+									<div class="project-progress">
+										<h6>Tests</h6>
+										<div id="projectTesting"></div>
+										<p class="waiting">Pending</p>
+									</div>
+								</div>
+							</div>
+							<!-- Row ends -->
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="project-status-card h-180">
+							<div id="overallProgress"></div>
+							<h6>Overall progress</h6>
+							<div class="kpi_more">
+								Project KPI
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="launch-box h-180">
+							<h6>Launch date</h6>
+							<p>Friday, February 7</p>
+							<h4 id="daysLeft"></h4>
+						</div>
+					</div>
+				</div>
+				<!-- Row ends -->
+
+				<!-- Row starts -->
+				<div class="row gutters">
+
+					<div class="col-12 col-lg-6 col-md-6 col-sm-6 col-xl-3 overview-box">
+						<h4>Project Description</h4>
+						<p> The sports track contributed to encouraging the population to follow healthy patterns of movement, and stimulate the practice of various sports, especially walking, cycling and horses, in an environment full of artistic, cultural, recreational and environmental activities
+							and events.</p>
+					</div>
+
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="card h-280">
+							<div class="card-header">
+								<div class="card-title">Staff</div>
+								<div class="staff_kpi_more">
+									Staff KPI
+								</div>
+							</div>
+							<div class="card-body pb-0" style="padding: 1.05rem 0.85rem;">
+								<ul class="TeamList">
+									<li>
+										<div class="sidebar-profile">
+
+											<div class="sidebar-profile-image">
+												<img src="./images/av1.jpg" class="img-circle img-responsive" alt="">
+											</div>
+											<div class="sidebar-profile-details">
+												<span>Mazen Farah<br><small>Executive Director</small></span>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<div class="sidebar-profile">
+
+											<div class="sidebar-profile-image">
+												<img src="./images/av3.jpg" class="img-circle img-responsive" alt="">
+											</div>
+											<div class="sidebar-profile-details">
+												<span>Ahmed Salama
+													<br>
+													<small>Systems Analyst</small>
+												</span>
+											</div>
+
+										</div>
+									</li>
+									<li>
+										<div class="sidebar-profile">
+
+											<div class="sidebar-profile-image">
+												<img src="./images/av5.jpg" class="img-circle img-responsive" alt="">
+											</div>
+											<div class="sidebar-profile-details">
+												<span>Sami karim <br>
+													<small>Project Manager </small>
+												</span>
+											</div>
+
+										</div>
+									</li>
+								</ul>
+								<!-- <div id="avg-handle-time"></div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="card h-280">
+							<div class="card-header">
+								<div class="card-title">Tasks Assigned</div>
+							</div>
+							<div class="card-body pb-0">
+								<div class="overview-box h-167">
+									<h4>Overview</h4>
+									<p>Q4 finished strong in terms of sales and orders, with revenue at 150% of goal.</p>
+								</div>
+								<div id="tasks-assigned"></div>
+							</div>
+						</div>
+					</div> -->
+					<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div class="card h-280">
+							<div class="card-header">
+								<div class="card-title">Project timeline</div>
+							</div>
+							<div class="card-body pt-0 pb-0">
+								<div id="project-timeline"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Row ends -->
+
+				<!-- Row starts -->
+				<div class="row gutters">
+					<div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="risks-block high h-117">
+							<i class="icon-warning1 text-red"></i>
+							<div class="risk-details">
+								<h2 class="text-red">7</h2>
+								<p>Late tasks<span>(High risk)</span></p>
+							</div>
+						</div>
+						<div class="risks-block low h-117">
+							<i class="icon-warning1 text-green"></i>
+							<div class="risk-details">
+								<h2 class="text-green">5</h2>
+								<p>Late tasks<span>(Low risk)</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="card h-250">
+							<div class="card-header">
+								<div class="card-title">Project budget</div>
+							</div>
+							<div class="card-body pb-0 m-auto">
+								<div id="budget"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="card h-250">
+							<div class="card-header">
+								<div class="card-title">Tasks <span class="see_all">See all</span></div>
+							</div>
+							<div class="card-body">
+								<div class="projectLog">
+									<div class="logs-container">
+										<div class="logs-body">
+											<div class="log-list">
+												<i class="icon-check_circle text-success"></i>
+												<div class="log-info">
+													<div class="log-title">Recreation area</div>
+													<!-- <div class="log-message">Interactive dashboard design</div>
+													<div class="log-user">By: <span class="name">Zuairia</span> - On<span class="dt">10/10/2019</span> </div> -->
+												</div>
+											</div>
+											<div class="log-list">
+												<i class="icon-check_circle text-success"></i>
+												<div class="log-info">
+													<div class="log-title"> Preparing training materials</div>
+													<!-- <div class="log-message">4 high risk tasks overdue</div>
+													<div class="log-user">By: <span class="name">Zyan</span> - On<span class="dt">10/15/2019</span> </div> -->
+												</div>
+											</div>
+											<div class="log-list">
+												<i class="icon-calendar text-info"></i>
+												<div class="log-info">
+													<div class="log-title"> Division of coaches' roles</div>
+													<!-- <div class="log-message">Discuss on status update</div>
+													<div class="log-user">By: <span class="name">Lewis</span> - On<span class="dt">10/18/2019</span> </div> -->
+												</div>
+											</div>
+											<div class="log-list">
+												<i class="icon-check_circle text-success"></i>
+												<div class="log-info">
+													<div class="log-title"> Providing appropriate rooms for training</div>
+													<!-- <div class="log-message">Currently 7% over target budget</div>
+													<div class="log-user">By: <span class="name">Sayed</span> - On<span class="dt">10/12/2019</span> </div> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+						<div class="card h-250">
+							<div class="card-header">
+								<div class="card-title">Summary</div>
+							</div>
+							<div class="card-body">
+								<ul class="list-group">
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Starting date:
+										<span class="badge badge-primary bg-blue badge-pill">09/15/2019</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Expiry date:
+										<span class="badge badge-primary bg-blue badge-pill">01/15/2020</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										Project manager:
+										<h6>Mazen Farah</h6>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										General situation:
+										<span class="badge badge-secondary bg-green badge-pill">On track</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Row ends -->
+
+			</div>
+			<!-- Content wrapper end -->
+
+		</div>
+		<!-- *************
+				************ Main container end *************
+			************* -->
+
+	</div>
+	<!-- Container fluid end -->
+
+	<!-- *************
+			************ Required JavaScript Files *************
+		************* -->
+	<!-- Required jQuery first, then Bootstrap Bundle JS -->
+	<script src="topbar-rtl/js/jquery.min.js"></script>
+	<script src="topbar-rtl/js/bootstrap.bundle.min.js"></script>
+	<script src="topbar-rtl/js/moment.js"></script>
+
+
+	<!-- *************
+			************ Vendor Js Files *************
+		************* -->
+	<!-- Slimscroll JS -->
+	<script src="topbar-rtl/vendor/slimscroll/slimscroll.min.js"></script>
+	<script src="topbar-rtl/vendor/slimscroll/custom-scrollbar.js"></script>
+
+	<!-- Daterange -->
+	<script src="topbar-rtl/vendor/daterange/daterange.js"></script>
+	<script src="topbar-rtl/vendor/daterange/custom-daterange.js"></script>
+
+	<!-- Circliful js -->
+	<script src="topbar-rtl/vendor/circliful/circliful.min.js"></script>
+	<script src="topbar-rtl/vendor/circliful/circliful.custom.js"></script>
+
+	<!-- Apex Charts -->
+	<script src="topbar-rtl/vendor/apex/apexcharts.min.js"></script>
+	<script src="topbar-rtl/vendor/apex/project-dashboard/timeline.js"></script>
+	<script src="topbar-rtl/vendor/apex/project-dashboard/avg-handle-time.js"></script>
+	<script src="topbar-rtl/vendor/apex/project-dashboard/budget.js"></script>
+	<script src="topbar-rtl/vendor/apex/project-dashboard/tasks-assigned.js"></script>
+
+	<!-- Main Js Required -->
+	<script src="topbar-rtl/js/main.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			const urlParams = new URLSearchParams(window.parent.location.search);
+			const idParam = urlParams.get('id');
+
+			$('.see_all').click(function () {
+				window.parent.location.href = 'task_list.html';
+			})
+
+			$('.kpi_more').click(function () {
+				window.parent.location.href = 'project_kpi.html?id=' + idParam;
+			})
+
+			$('.staff_kpi_more').click(function () {
+				window.parent.location.href = 'staff_project_kpi.html?id=' + idParam;
+			})
+		})
+	</script>
+
+</body>
+
+</html>

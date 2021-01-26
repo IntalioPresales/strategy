@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/core.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/widgets.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/pages/task_detailed.js"></script>
+	<!-- /theme JS files -->
+
+	<style>
+		body {
+			background-color: #f1f4f9;
+		}
+
+		.heading-elements {
+			background-color: inherit;
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			right: unset;
+			height: 36px;
+			margin-top: -18px;
+		}
+
+		dd {
+			margin: 0;
+		}
+
+		.list-inline {
+			padding: 0;
+		}
+
+		.list-inline>li:last-child {
+			padding-right: 20px;
+		}
+
+		.media-left,
+		.media>.pull-left {
+			padding-left: 20px;
+		}
+
+		.media-list {
+			padding: 0;
+		}
+
+		.media-heading a.text-semibold {
+			float: right;
+		}
+
+		.heading-elements:not(.visible-elements) .icons-list {
+			margin-top: 10px;
+			margin-left: 0;
+		}
+	</style>
+
+</head>
+
+<body class="sidebar-xs">
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Detailed task -->
+				<div class="row">
+					<div class="col-lg-9">
+
+						<!-- Task overview -->
+						<div class="panel panel-flat">
+							<div class="panel-heading mt-5">
+								<h5 class="panel-title">#23: مراجعة وتدقيق سياسة الجودة</h5>
+								<div class="heading-elements">
+									<a href="#" class="btn bg-teal-400 btn-sm btn-labeled btn-labeled-right heading-btn">تحقق في<b><i class="icon-alarm-check"></i></b></a>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<h6 class="text-semibold">نظرة عامة</h6>
+								<p class="content-group">
+									يعتبر المشروع - بشكل عام - تدبيرا استراتيجيا محدد الوسائل و األهداف و النتائج؛ يتطلب الدقة
+									و التحكم لتحقيق الهدف المحدد مع قابلية التقويم. و من هنا، يُعد مشروع المؤسسة - بشكل خاص –
+									إحدى آليات تنزيل رؤية استشرافية لتحسين فعالية المؤسسة و تجويد خدماتها، و نجاعة أدوارها التربوية
+									و االجتماعية،
+								</p>
+
+								<h6 class="text-semibold">ماذا نحتاج</h6>
+								<p class="content-group-lg">من بين أهم المهام الموكولة لفريق القيادة من أجل تفعيل و أجرأة مشروع المؤسسة ما يلي:
+									تشخيص وضعية التعلم و العوامل المؤثرة فيه.
+									إعمال المقاربة التشاركية؛ انطالقا من الحرص على مساهمة الفاعلين و الشركاء في عملية
+									التشخيص؛ و ذلك على مستوى العمل، و عند تحديد األهداف و األنشطة، ثم استراتيجية
+									اإلنجاز و التتبع و التقويم</p>
+
+								<div class="row container-fluid">
+									<div class="col-sm-6">
+										<div class="content-group">
+											<dl>
+												<dt class="text-primary text-uppercase">1. سوء فهم مقنع أكثر اعتمادًا</dt>
+												<dd>مثل سحر المشاركة هذا القضاعة الحماسية اللذيذة البعيدة هذا الإغوانا عسل النمس.</dd>
+
+												<dt class=" text-primary text-uppercase">2. حسنا بعض الراكون </dt>
+												<dd>- بقيادة المدير – يندرج هذا المجلس ضمن أحد آليات تنزيل مشروع المؤسسة،
+													و ينبثق عنه</dd>
+
+												<dt class=" text-primary text-uppercase">3. بسرعة إلى هذا الحد</dt>
+												<dd>بصفته رئيس المؤسسة و في الوقت نفسه؛ رئيس كافة مجالس المؤسسة، فهو بذلك؛ يعتبر
+													الساهر على قيادة المشروع</dd>
+											</dl>
+										</div>
+									</div>
+
+									<div class="col-sm-6">
+										<div class="content-group">
+											<dl>
+												<dt class=" text-primary text-uppercase">1. دليل إجرائي يفصل كيفية استعمال أداة</dt>
+												<dd>يضطلع فريق القيادة بمهام التخطيط، و تأطير إدارة المشروع عبر مختلف مراحله</dd>
+
+												<dt class=" text-primary text-uppercase">2. ميكانيكية مثبتة بالكثير من السوائل</dt>
+												<dd>و تهدف هذه العدة المتكاملة إلى وضع استراتيجية واضحة لإرساء مشروع المؤسس</dd>
+
+												<dt class=" text-primary text-uppercase">3. شبكة لتشخيص وضعية المؤسسة</dt>
+												<dd>مشروع المؤسسة الآلية الأساسية التي تعتمد عليها الوزارة لتفعيل الإصلاح داخل المؤسسة التعليمية</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+
+								<h6 class="text-semibold">المتطلبات</h6>
+								<p class="content-group">تجويد التعلمات و االرتقاء بالحياة المدرسية و نجاح كل التالميذ و التلميذات</p>
+
+								<div class="table-responsive content-group" style="display: none;">
+									<table class="table table-framed">
+										<thead>
+											<tr>
+												<th style="width: 20px;">#</th>
+												<th class="col-xs-3">Task</th>
+												<th class="col-xs-2">Due date</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td><span class="text-semibold">Design mockup</span></td>
+												<td>
+													<div class="input-group input-group-transparent">
+														<div class="input-group-addon"><i class="icon-calendar22 position-left"></i></div>
+														<input type="text" class="form-control datepicker" value="21 January, 15">
+													</div>
+												</td>
+												<td>Create design mockups for a new app, must be delivered before 1st of March</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td><span class="text-semibold">User interface research</span></td>
+												<td>
+													<div class="input-group input-group-transparent">
+														<div class="input-group-addon"><i class="icon-calendar22 position-left"></i></div>
+														<input type="text" class="form-control datepicker" value="24 January, 15">
+													</div>
+												</td>
+												<td>Create a focus group with random people, provide a research statement</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td><span class="text-semibold">New icons set</span></td>
+												<td>
+													<div class="input-group input-group-transparent">
+														<div class="input-group-addon"><i class="icon-calendar22 position-left"></i></div>
+														<input type="text" class="form-control datepicker" value="28 January, 15">
+													</div>
+												</td>
+												<td>Create a full set of icons required for the iOS application, send them to team lead for review</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td><span class="text-semibold">Loading optimization</span></td>
+												<td>
+													<div class="input-group input-group-transparent">
+														<div class="input-group-addon"><i class="icon-calendar22 position-left"></i></div>
+														<input type="text" class="form-control datepicker" value="1 February, 15">
+													</div>
+												</td>
+												<td>Review image sizes, compress them as much as possible, make sure page loading time is less than 1 second</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<h6 class="text-semibold">الملفات التي يتم تحميلها
+								</h6>
+
+								<div class="row">
+									<div class="col-md-3 col-sm-6">
+										<div class="thumbnail">
+											<div class="thumb">
+												<img src="assets/images/placeholder.jpg" alt="">
+												<div class="caption-overflow">
+													<span>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-zoomin3"></i></a>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-download"></i></a>
+													</span>
+												</div>
+											</div>
+
+											<div class="caption text-center">
+												dashboard_draft.png
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 col-sm-6">
+										<div class="thumbnail">
+											<div class="thumb">
+												<img src="assets/images/placeholder.jpg" alt="">
+												<div class="caption-overflow">
+													<span>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-zoomin3"></i></a>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-download"></i></a>
+													</span>
+												</div>
+											</div>
+
+											<div class="caption text-center">
+												profile_page.png
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 col-sm-6">
+										<div class="thumbnail">
+											<div class="thumb">
+												<img src="assets/images/placeholder.jpg" alt="">
+												<div class="caption-overflow">
+													<span>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-zoomin3"></i></a>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-download"></i></a>
+													</span>
+												</div>
+											</div>
+
+											<div class="caption text-center">
+												shopping_cart.png
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 col-sm-6">
+										<div class="thumbnail">
+											<div class="thumb">
+												<img src="assets/images/placeholder.jpg" alt="">
+												<div class="caption-overflow">
+													<span>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-zoomin3"></i></a>
+														<a href="#" class="btn bg-success-300 btn-xs btn-icon"><i class="icon-download"></i></a>
+													</span>
+												</div>
+											</div>
+
+											<div class="caption text-center">
+												sales_statistics.png
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel-footer">
+								<div class="heading-elements">
+
+
+									<ul class="list-inline list-inline-condensed heading-text pull-right">
+										<li><a href="#" class="text-default"><i class="icon-compose"></i></a></li>
+										<li><a href="#" class="text-default"><i class="icon-trash"></i></a></li>
+										<li class="dropdown">
+											<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-grid-alt"></i> <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#"><i class="icon-alarm-add"></i> Check in</a></li>
+												<li><a href="#"><i class="icon-attachment"></i> Attach screenshot</a></li>
+												<li><a href="#"><i class="icon-user-plus"></i> Assign users</a></li>
+												<li><a href="#"><i class="icon-warning2"></i> Report</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /task overview -->
+
+
+						<!-- Comments -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title text-semiold"><i class="icon-bubbles4 position-left"></i> تعليقات</h5>
+								<div class="heading-elements">
+									<a href="#" class="btn bg-blue btn-xs btn-icon"><i class="icon-plus2"></i></a>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<ul class="media-list content-group-lg stack-media-on-mobile">
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-heading">
+												<a href="#" class="text-semibold">مازن فرح</a>
+												<span class="media-annotation dotted">في هذة اللحظة</span>
+											</div>
+
+											<p>جعل المشاريع التربوية لألقسام دعامات لبناء مشروع المؤسسة</p>
+
+											<ul class="list-inline list-inline-separate ">
+												<li>114 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+												<li><a href="#">الرد</a></li>
+												<li><a href="#">تعديل</a></li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-heading">
+												<a href="#" class="text-semibold">احمد سلامة</a>
+												<span class="media-annotation dotted">منذ 5 دقائق</span>
+											</div>
+
+											<p>قيادة مفتوحة تستوعب الطرق و األساليب المختلفة، و أحيانا غير المتوقعة، و ذلك للوصول إلى
+												الهدف الرئيسي، و بعبارة أخرى؛ الحزم اتجاه الغايات، و المرونة اتجاه التدابير واإلجراءات،
+												مع الصبر و المثابرة و الحكمة الكافية، حتى ال تتسرع في اتخاذ عالج قد ال يكون مفيد</p>
+
+											<ul class="list-inline list-inline-separate ">
+												<li>90 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+												<li><a href="#">الرد</a></li>
+												<li><a href="#">تعديل</a></li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+										</div>
+
+										<div class="media-body">
+											<div class="media-heading">
+												<a href="#" class="text-semibold">سامي كريم</a>
+												<span class="media-annotation dotted">منذ 7 دقائق</span>
+											</div>
+
+											<p>مشروع واضح و متناسق في أهدافه و أنشطته و موارده، و سبل إنجازه</p>
+
+											<ul class="list-inline list-inline-separate ">
+												<li>70 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+												<li><a href="#">الرد</a></li>
+												<li><a href="#">تعديل</a></li>
+											</ul>
+
+											<div class="media">
+												<div class="media-left">
+													<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+												</div>
+
+												<div class="media-body">
+													<div class="media-heading">
+														<a href="#" class="text-semibold">شادي مازح</a>
+														<span class="media-annotation dotted">منذ 15 دقائق</span>
+													</div>
+
+													<p>إن مشروع المؤسسة بهذه التقنية ال يستقيم إال إذا أسس لزوما على هذه المكونات و الخطوات األربع:</p>
+
+													<ul class="list-inline list-inline-separate ">
+														<li>67 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+														<li><a href="#">الرد</a></li>
+														<li><a href="#">تعديل</a></li>
+													</ul>
+
+													<div class="media">
+														<div class="media-left">
+															<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+														</div>
+
+														<div class="media-body">
+															<div class="media-heading">
+																<a href="#" class="text-semibold">كمال طاهر</a>
+																<span class="media-annotation dotted">منذ ساعة</span>
+															</div>
+
+															<p>أفكار ناتجة عن االستماع و اإلنصات لبعضنا البعض؛ قصد وضع اليد
+																و رصد االختالالت و النجاحات التي تعرفها المؤسسة، إال أنه ينبغي التركيز في هذا المستوى على
+																أربعة مداخل أساسية للتشخيص</p>
+
+															<ul class="list-inline list-inline-separate ">
+																<li>54 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+																<li><a href="#">الرد</a></li>
+																<li><a href="#">تعديل</a></li>
+															</ul>
+														</div>
+													</div>
+
+													<div class="media">
+														<div class="media-left">
+															<a href="#"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
+														</div>
+
+														<div class="media-body">
+															<div class="media-heading">
+																<a href="#" class="text-semibold">سليم</a>
+																<span class="media-annotation dotted">منذ ساعة</span>
+															</div>
+
+															<p>؛ يمكن تطبيق النموذج المتكون من الرباعية التالية: )نقاط القوة،
+																نقاط الضعف، الفرص، المخاطر(. و يهدف هذا النموذج إلى تحديد نقاط القوة و نقاط الضعف المرتبطة
+																بالبيئة الداخلية للمؤسسة،</p>
+
+															<ul class="list-inline list-inline-separate ">
+																<li>41 <a href="#"><i class="icon-arrow-up22 text-success"></i></a><a href="#"><i class="icon-arrow-down22 text-danger"></i></a></li>
+																<li><a href="#">الرد</a></li>
+																<li><a href="#">تعديل</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+
+								</ul>
+
+								<div class="text-right">
+									<button type="button" class="btn bg-blue"><i class="icon-plus22"></i> أضف تعليق </button>
+								</div>
+							</div>
+						</div>
+						<!-- /comments -->
+
+					</div>
+
+					<div class="col-lg-3">
+
+						<!-- Timer -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title"><i class="icon-watch position-left"></i> مؤقت المهام</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<ul class="timer-weekdays mb-10">
+									<li><a href="#" class="label label-default">الإثنين</a></li>
+									<li class="active"><a href="#" class="label label-danger">الثلاثاء</a></li>
+									<li><a href="#" class="label label-default">الأربعاء</a></li>
+									<li><a href="#" class="label label-default">خميس</a></li>
+									<li><a href="#" class="label label-default">الجمعة</a></li>
+									<li><a href="#" class="label label-default">السبت</a></li>
+									<li><a href="#" class="label label-default">الاحد</a></li>
+								</ul>
+
+								<ul class="timer mb-10">
+									<li>
+										09 <span>ساعة</span>
+									</li>
+									<li class="dots">:</li>
+									<li>
+										54 <span>دقيقة</span>
+									</li>
+									<li class="dots">:</li>
+									<li>
+										29 <span>ثوان</span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="panel-footer panel-footer-transparent">
+								<div class="heading-elements">
+									<ul class="list-inline list-inline-condensed heading-text">
+										<li><a href="#" class="text-default"><i class="icon-play3"></i></a></li>
+										<li><a href="#" class="text-default"><i class="icon-pause"></i></a></li>
+										<li><a href="#" class="text-default"><i class="icon-stop"></i></a></li>
+									</ul>
+
+									<ul class="list-inline list-inline-condensed heading-text pull-right">
+										<li class="dropdown">
+											<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown">
+												<span class="status-mark border-success position-left"></span>
+												مفتوح
+												<span class="caret"></span>
+											</a>
+
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li class="active"><a href="#">مفتوح</a></li>
+												<li><a href="#">تم الحل</a></li>
+												<li><a href="#">مغلق</a></li>
+												<li class="divider"></li>
+												<li><a href="#">مكرر</a></li>
+												<li><a href="#">غير صالح</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /timer -->
+
+
+						<!-- Task details -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title"><i class="icon-files-empty position-left"></i> تفاصيل المهمة
+								</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<table class="table table-borderless table-xs content-group-sm">
+								<tbody>
+									<tr>
+										<td><i class="icon-briefcase position-left"></i> المشروع:</td>
+										<td class="text-right"><span class="pull-right"><a href="#">تاهيل الكوادر العاملة</a></span></td>
+									</tr>
+									<tr>
+										<td><i class="icon-alarm-add position-left"></i> محدث:</td>
+										<td class="text-right">12 May, 2015</td>
+									</tr>
+									<tr>
+										<td><i class="icon-alarm-check position-left"></i> خلقت:</td>
+										<td class="text-right">25 Feb, 2015</td>
+									</tr>
+									<tr>
+										<td><i class="icon-alarm-check position-left"></i> المرحلة:</td>
+										<td class="text-right">تخطيط</td>
+									</tr>
+									<tr>
+										<td><i class="icon-circles2 position-left"></i> أفضلية:</td>
+										<td class="text-right">
+											<div class="btn-group">
+												<a href="#" class="label label-danger dropdown-toggle" data-toggle="dropdown">الاعلى <span class="caret"></span></a>
+												<ul class="dropdown-menu dropdown-menu-right">
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><i class="icon-history position-left"></i> التنقيحات:</td>
+										<td class="text-right">29</td>
+									</tr>
+									<tr>
+										<td><i class="icon-file-plus position-left"></i> أضيفت من قبل:</td>
+										<td class="text-right"><a href="#">مازن فرح</a></td>
+									</tr>
+									<tr>
+										<td><i class="icon-file-check position-left"></i> الحالة:</td>
+										<td class="text-right">مفتوح</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="panel-footer panel-footer-condensed">
+								<div class="heading-elements">
+									<ul class="list-inline list-inline-condensed heading-text">
+										<li><a href="#" class="text-default"><i class="icon-pencil7"></i></a></li>
+										<li><a href="#" class="text-default"><i class="icon-bin"></i></a></li>
+									</ul>
+
+									<ul class="list-inline list-inline-condensed heading-text pull-right">
+										<li><a href="#" class="text-default"><i class="icon-statistics"></i></a></li>
+										<li class="dropdown">
+											<a href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-gear"></i><span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#"><i class="icon-alarm-add"></i> تحقق في</a></li>
+												<li><a href="#"><i class="icon-user-plus"></i> تعديل العاملين</a></li>
+												<li><a href="#"><i class="icon-warning2"></i> تقرير</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /task details -->
+
+
+						<!-- Task settings -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title"><i class="icon-cog3 position-left"></i> إعدادات المهمة</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<form action="#">
+									<div class="form-group">
+
+										<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+											<label class="display-block">
+												<input type="checkbox" class="switchery">
+												السماح بالتعليقات
+											</label>
+										</div>
+
+										<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+											<label class="display-block">
+												<input type="checkbox" class="switchery" checked="checked">
+												السماح للمستخدمين بتحرير المهمة
+											</label>
+										</div>
+
+										<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+											<label class="display-block">
+												<input type="checkbox" class="switchery" checked="checked">
+												استخدم مؤقت المهام
+
+											</label>
+										</div>
+
+										<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+											<label class="display-block">
+												<input type="checkbox" class="switchery">
+												الحفظ التلقائي
+											</label>
+										</div>
+
+										<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+											<label class="display-block">
+												<input type="checkbox" class="switchery" checked="checked">
+												السماح بالمرفقات
+
+											</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<p><button class="btn btn-default btn-sm btn-block" type="button">إعادة تعيين</button></p>
+										</div>
+
+										<div class="col-md-6">
+											<p><button class="btn btn-primary btn-sm btn-block" type="button">حفظ</button></p>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- /task settings -->
+
+
+						<!-- Revisions -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title"><i class="icon-git-commit position-left"></i> التنقيحات</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left"><a href="#" class="btn border-primary text-primary btn-icon btn-flat btn-sm btn-rounded"><i class="icon-git-pull-request"></i></a></div>
+										<div class="media-body">
+											تحديد الخطوات
+											<div class="media-annotation"> منذ3 ساعات</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><a href="#" class="btn border-warning text-warning btn-icon btn-flat btn-sm btn-rounded"><i class="icon-git-commit"></i></a></div>
+										<div class="media-body">
+											تحديد األهداف
+											<div class="media-annotation">منذ 4 ساعات</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><a href="#" class="btn border-info text-info btn-icon btn-flat btn-sm btn-rounded"><i class="icon-git-branch"></i></a></div>
+										<div class="media-body">
+											ضمان انخراط األطر المتطوع
+											<div class="media-annotation">منذ 5 ساعات</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><a href="#" class="btn border-success text-success btn-icon btn-flat btn-sm btn-rounded"><i class="icon-git-merge"></i></a></div>
+										<div class="media-body">
+											تشكيل فرق العمل و اللجان
+											<div class="media-annotation">منذ 6 ساعات</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><a href="#" class="btn border-primary text-primary btn-icon btn-flat btn-sm btn-rounded"><i class="icon-git-pull-request"></i></a></div>
+										<div class="media-body">
+											توفير الموارد المالية و التقنية
+											<div class="media-annotation">منذ 7 ساعات</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /revisions -->
+
+
+						<!-- Attached files -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title"><i class="icon-link position-left"></i> الملفات المرفقة
+								</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left media-middle">
+											<i class="icon-file-word icon-2x text-muted"></i>
+										</div>
+
+										<div class="media-body">
+											<a href="#" class="media-heading text-semibold">Overdrew_scowled.doc</a>
+											<ul class="list-inline list-inline-separate list-inline-condensed text-size-mini text-muted">
+												<li>الحجم: 1.2</li>
+												<li>أضيفت من قبل <a href="#">مازن</a></li>
+											</ul>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list">
+												<li><a href="#"><i class="icon-download"></i></a></li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left media-middle">
+											<i class="icon-file-stats icon-2x text-muted"></i>
+										</div>
+
+										<div class="media-body">
+											<a href="#" class="media-heading text-semibold">And_less_maternally.pdf</a>
+											<ul class="list-inline list-inline-separate list-inline-condensed text-size-mini text-muted">
+												<li>الحجم: 0.9</li>
+												<li>أضيفت من قبل <a href="#">حسن</a></li>
+											</ul>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list">
+												<li><a href="#"><i class="icon-download"></i></a></li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left media-middle">
+											<i class="icon-file-pdf icon-2x text-muted"></i>
+										</div>
+
+										<div class="media-body">
+											<a href="#" class="media-heading text-semibold">The_less_overslept.pdf</a>
+											<ul class="list-inline list-inline-separate list-inline-condensed text-size-mini text-muted">
+												<li>الحجم: 4.3</li>
+												<li>أضيفت من قبل <a href="#">حسن</a></li>
+											</ul>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list">
+												<li><a href="#"><i class="icon-download"></i></a></li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left media-middle">
+											<i class="icon-file-video icon-2x text-muted"></i>
+										</div>
+
+										<div class="media-body">
+											<a href="#" class="media-heading text-semibold">Well_equitably.mov</a>
+											<ul class="list-inline list-inline-separate list-inline-condensed text-size-mini text-muted">
+												<li>الحجم: 14.8</li>
+												<li>أضيفت من قبل <a href="#">مازن</a></li>
+											</ul>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list">
+												<li><a href="#"><i class="icon-download"></i></a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /attached files -->
+
+
+						<!-- Assigned users -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h6 class="panel-title"><i class="icon-users position-left"></i> فريق العمل</h6>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/av6.jpg" class="img-sm img-circle" alt=""></a>
+										</div>
+										<div class="media-body media-middle text-semibold">
+											مازن فرح
+											<div class="media-annotation">مطور برامج</div>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list text-nowrap">
+												<li>
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-comment-discussion pull-right"></i> ابدأ الدردشة</a></li>
+														<li><a href="#"><i class="icon-phone2 pull-right"></i> إجراء مكالمة</a></li>
+														<li><a href="#"><i class="icon-mail5 pull-right"></i> ارسل بريد</a></li>
+														<li class="divider"></li>
+														<li><a href="#"><i class="icon-statistics pull-right"></i> تقرير</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/av9.jpg" class="img-sm img-circle" alt=""></a>
+										</div>
+										<div class="media-body media-middle text-semibold">
+											وسيم مازح
+											<div class="media-annotation">قائد فريق</div>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list text-nowrap">
+												<li>
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-comment-discussion pull-right"></i> ابدأ الدردشة</a></li>
+														<li><a href="#"><i class="icon-phone2 pull-right"></i> إجراء مكالمة</a></li>
+														<li><a href="#"><i class="icon-mail5 pull-right"></i> ارسل بريد</a></li>
+														<li class="divider"></li>
+														<li><a href="#"><i class="icon-statistics pull-right"></i> تقرير</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/av7.jpg" class="img-sm img-circle" alt=""></a>
+										</div>
+
+										<div class="media-body media-middle text-semibold">
+											سامي كريم
+											<div class="media-annotation">مهندس مساحة</div>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list text-nowrap">
+												<li>
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-comment-discussion pull-right"></i> ابدأ الدردشة</a></li>
+														<li><a href="#"><i class="icon-phone2 pull-right"></i> إجراء مكالمة</a></li>
+														<li><a href="#"><i class="icon-mail5 pull-right"></i> ارسل بريد</a></li>
+														<li class="divider"></li>
+														<li><a href="#"><i class="icon-statistics pull-right"></i> تقرير</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/av4.jpg" class="img-sm img-circle" alt=""></a>
+										</div>
+
+										<div class="media-body media-middle text-semibold">
+											احمد سلامة
+											<div class="media-annotation">مدقق مالي</div>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list text-nowrap">
+												<li>
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-comment-discussion pull-right"></i> ابدأ الدردشة</a></li>
+														<li><a href="#"><i class="icon-phone2 pull-right"></i> إجراء مكالمة</a></li>
+														<li><a href="#"><i class="icon-mail5 pull-right"></i> ارسل بريد</a></li>
+														<li class="divider"></li>
+														<li><a href="#"><i class="icon-statistics pull-right"></i> تقرير</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#"><img src="assets/images/av1.jpg" class="img-sm img-circle" alt=""></a>
+										</div>
+
+										<div class="media-body media-middle text-semibold">
+											حسن الرفاعي
+											<div class="media-annotation">مدقق مالي</div>
+										</div>
+
+										<div class="media-right media-middle">
+											<ul class="icons-list text-nowrap">
+												<li>
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#"><i class="icon-comment-discussion pull-right"></i> ابدأ الدردشة</a></li>
+														<li><a href="#"><i class="icon-phone2 pull-right"></i> إجراء مكالمة</a></li>
+														<li><a href="#"><i class="icon-mail5 pull-right"></i> ارسل بريد</a></li>
+														<li class="divider"></li>
+														<li><a href="#"><i class="icon-statistics pull-right"></i> تقرير</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /assigned users -->
+
+					</div>
+				</div>
+				<!-- /detailed task -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+	<!-- Footer -->
+	<div class="footer text-muted">
+		&copy; 2015. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+	</div>
+	<!-- /footer -->
+
+</body>
+
+</html>
